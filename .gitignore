@@ -1,0 +1,14 @@
+.DS_Store
+*.swp
+__pycache__/
+*.pyc
+
+# Build output: keep only the server-downloadable archive.
+build/*
+!build/ymyy-hermes-profile.tar.gz
+
+# Local/private notes that are not needed by the server profile package.
+服务器信息.md
+项目总览.md
+周报索引.md
+/book-to-skill/
