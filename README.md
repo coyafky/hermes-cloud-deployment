@@ -1,6 +1,6 @@
 # 有膜有漾 Hermes Sales Agent Profile
 
-This repository contains the Hermes profile, sales skills, and knowledge base package for the 有膜有漾 internal sales agent.
+This repository contains the Hermes profile, sales skills, vehicle-wrap preview skill, color assets, and knowledge base package for the 有膜有漾 internal sales agent.
 
 ## Server Download
 
@@ -27,6 +27,19 @@ The archive expands into:
 ~/.hermes/knowledge-base/ymyy-sales-agent/
 ```
 
+The package includes `ark-seedream-car-preview`, which generates vehicle wrap previews from:
+
+```text
+customer vehicle image + preview color-card image + Xinghu gpt-image-2
+```
+
+The skill includes the color asset library and preview swatch images under:
+
+```text
+~/.hermes/skills/ark-seedream-car-preview/references/color_assets.json
+~/.hermes/skills/ark-seedream-car-preview/assets/previews/
+```
+
 ## Rebuild Package
 
 After editing profile, skills, or knowledge base files:
@@ -41,6 +54,6 @@ Then commit the updated source files and `build/ymyy-hermes-profile.tar.gz`.
 ## Main Assets
 
 - `hermes-profile/`: SOUL and MEMORY for the sales agent.
-- `skills/`: reusable sales workflows.
+- `skills/`: reusable sales workflows and the vehicle-wrap preview generation skill.
 - `knowledge-base/ymyy-sales-agent/`: structured service manual knowledge.
 - `docs/upload-ymyy-profile-to-server.md`: deployment notes.

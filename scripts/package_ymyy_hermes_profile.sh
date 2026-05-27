@@ -22,6 +22,7 @@ cp -R "${ROOT_DIR}/skills/ask-with-mom-test" "${OUT_DIR}/.hermes/skills/"
 cp -R "${ROOT_DIR}/skills/answer-customer-faq-transparently" "${OUT_DIR}/.hermes/skills/"
 cp -R "${ROOT_DIR}/skills/negotiate-with-tactical-empathy" "${OUT_DIR}/.hermes/skills/"
 cp -R "${ROOT_DIR}/skills/strengthen-sales-wording-with-influence" "${OUT_DIR}/.hermes/skills/"
+cp -R "${ROOT_DIR}/skills/ark-seedream-car-preview" "${OUT_DIR}/.hermes/skills/"
 
 cp "${ROOT_DIR}/knowledge-base/ymyy-sales-agent/ymyy-service-manual.jsonl" \
   "${OUT_DIR}/.hermes/knowledge-base/${PROFILE_NAME}/ymyy-service-manual.jsonl"
@@ -35,7 +36,7 @@ cp "${ROOT_DIR}/knowledge-base/ymyy-sales-agent/queries.md" \
 cat > "${OUT_DIR}/.hermes/profiles/${PROFILE_NAME}/profile.yaml" <<'YAML'
 name: ymyy-sales-agent
 display_name: 有膜有漾内部销售助手
-description: 面向门店销售、招商人员和客服的有膜有漾销售知识助手
+description: 面向门店销售、招商人员和客服的有膜有漾销售知识与车膜改色生图助手
 soul: SOUL.md
 memory: MEMORY.md
 skills:
@@ -47,8 +48,10 @@ skills:
   - recommend-film-product
   - handle-film-objections
   - write-sales-followup
+  - ark-seedream-car-preview
 knowledge_base:
   - ../../knowledge-base/ymyy-sales-agent/ymyy-service-manual.jsonl
+  - ../../skills/ark-seedream-car-preview/references/color_assets.json
 retrieval:
   top_k: 5
   require_source_page_for:
@@ -57,9 +60,18 @@ retrieval:
     - 厚度
     - 阻隔率
     - 售后
+generation:
+  vehicle_wrap_preview_skill: ark-seedream-car-preview
+  image_provider: xinghu
+  image_model: gpt-image-2
+  default_size: auto
+  quality: high
+  color_asset_library: ../../skills/ark-seedream-car-preview/references/color_assets.json
 guardrails:
   - 不回答实时价格、活动、库存、施工排期，提示以门店最新政策为准。
   - 不承诺手册中没有写明的质保、效果或售后责任。
+  - 生成改色预览图时只改变车身贴膜覆盖区域，不改变车型、轮毂、车灯、车牌、背景和光影。
+  - 改色生图必须走客户车型图 + 资产库 preview 色卡图 + Xinghu gpt-image-2；color.hex 和 Lab 只作为辅助标注，禁止回退到纯 HEX/Lab 数值生图。
 YAML
 
 cat > "${OUT_DIR}/README.md" <<'MARKDOWN'
@@ -79,13 +91,15 @@ Expected destination:
 ~/.hermes/skills/recommend-film-product/
 ~/.hermes/skills/handle-film-objections/
 ~/.hermes/skills/write-sales-followup/
+~/.hermes/skills/ark-seedream-car-preview/
 ~/.hermes/knowledge-base/ymyy-sales-agent/
 ```
 
 After upload, point the Feishu/Hermes gateway to profile `ymyy-sales-agent`.
 MARKDOWN
 
-tar -C "${OUT_DIR}" -czf "${ROOT_DIR}/build/ymyy-hermes-profile.tar.gz" .
+find "${OUT_DIR}" \( -name '.DS_Store' -o -name '._*' \) -delete
+LC_ALL=C COPYFILE_DISABLE=1 tar -C "${OUT_DIR}" -czf "${ROOT_DIR}/build/ymyy-hermes-profile.tar.gz" .
 
 echo "Built: ${OUT_DIR}"
 echo "Archive: ${ROOT_DIR}/build/ymyy-hermes-profile.tar.gz"

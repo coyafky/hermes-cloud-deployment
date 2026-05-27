@@ -1,0 +1,6481 @@
+{
+  "schema_version": "1.4.0",
+  "asset_type": "vehicle_wrap_color_library",
+  "generated_at": "2026-05-27T00:15:46+00:00",
+  "source": {
+    "workbook": "MGS-PET改色膜-飞书色卡画廊_色卡档案_全部色卡.xlsx",
+    "sheet": "色卡档案",
+    "preview_dir": "/Users/fkycoya/Documents/zichangku/ark-seedream-car-preview/assets/previews",
+    "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+    "lab_observer": "CIE Lab from measured color-card data",
+    "color_value_policy": "Use the preview swatch image as the primary generation color reference. HEX and Lab are auxiliary labels for routing, traceability, and sales summaries."
+  },
+  "usage": {
+    "lookup_keys": [
+      "id",
+      "serial",
+      "names.zh",
+      "names.en",
+      "names.aliases"
+    ],
+    "generation_script": "scripts/gen.py --asset-id <serial-or-name> --vehicle-ref <customer-car-image>"
+  },
+  "counts": {
+    "assets": 105,
+    "with_swatch": 105,
+    "with_hex": 105
+  },
+  "assets": [
+    {
+      "id": "A-001",
+      "source_id": "NO.001",
+      "serial": "A-001",
+      "names": {
+        "zh": "宝马阿布扎比蓝",
+        "en": "BMW Abu Dhabi Blue",
+        "aliases": [
+          "A-001",
+          "宝马阿布扎比蓝",
+          "BMW Abu Dhabi Blue",
+          "bmwabudhabiblue"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 41.6,
+          "a": -3.38,
+          "b": -20.38
+        },
+        "hex": "#4B6687",
+        "family": "蓝色系"
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/A-001-measurement-4.png",
+        "source_swatch_name": "A-001-measurement-18.png",
+        "real_card": "image.png",
+        "match_strategy": "serial_prefix"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 18,
+        "measured_at": "2026-05-19",
+        "preview_lab": {
+          "L": 42.16,
+          "a": -3.5,
+          "b": -21.56
+        }
+      },
+      "prompt": {
+        "color_name": "宝马阿布扎比蓝 / BMW Abu Dhabi Blue",
+        "color_code": "A-001",
+        "color_value": "#4B6687",
+        "lab_value": "Lab(L=41.6, a=-3.38, b=-20.38)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "蓝色系，PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，宝马阿布扎比蓝（BMW Abu Dhabi Blue），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #4B6687，Lab 辅助参考 Lab(L=41.6, a=-3.38, b=-20.38)"
+      },
+      "tags": [
+        "PET",
+        "蓝色系",
+        "宝马阿布扎比蓝",
+        "BMW Abu Dhabi Blue"
+      ]
+    },
+    {
+      "id": "A-003",
+      "source_id": "NO.002",
+      "serial": "A-003",
+      "names": {
+        "zh": "保时捷亚灰",
+        "en": "Porsche Matte Grey",
+        "aliases": [
+          "A-003",
+          "保时捷亚灰",
+          "Porsche Matte Grey",
+          "porschemattegrey"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 57.37,
+          "a": 0.32,
+          "b": 0.24
+        },
+        "hex": "#8A8A89",
+        "family": "灰色系"
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/A-003-measurement-25.png",
+        "source_swatch_name": "A-003-measurement-25.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 25,
+        "measured_at": "2026-05-25",
+        "preview_lab": {
+          "L": 57.37,
+          "a": 0.32,
+          "b": 0.24
+        }
+      },
+      "prompt": {
+        "color_name": "保时捷亚灰 / Porsche Matte Grey",
+        "color_code": "A-003",
+        "color_value": "#8A8A89",
+        "lab_value": "Lab(L=57.37, a=0.32, b=0.24)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "灰色系，PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，保时捷亚灰（Porsche Matte Grey），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #8A8A89，Lab 辅助参考 Lab(L=57.37, a=0.32, b=0.24)"
+      },
+      "tags": [
+        "PET",
+        "灰色系",
+        "保时捷亚灰",
+        "Porsche Matte Grey"
+      ]
+    },
+    {
+      "id": "A-004",
+      "source_id": "NO.003",
+      "serial": "A-004",
+      "names": {
+        "zh": "保时捷GT银",
+        "en": "Porsche GT Silver",
+        "aliases": [
+          "A-004",
+          "保时捷GT银",
+          "Porsche GT Silver",
+          "gt",
+          "porschegtsilver"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 77.26,
+          "a": -0.65,
+          "b": -0.54
+        },
+        "hex": "#BDBFC0",
+        "family": "银色系"
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/A-004-measurement-26.png",
+        "source_swatch_name": "A-004-measurement-26.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 26,
+        "measured_at": "2026-05-25",
+        "preview_lab": {
+          "L": 77.26,
+          "a": -0.65,
+          "b": -0.54
+        }
+      },
+      "prompt": {
+        "color_name": "保时捷GT银 / Porsche GT Silver",
+        "color_code": "A-004",
+        "color_value": "#BDBFC0",
+        "lab_value": "Lab(L=77.26, a=-0.65, b=-0.54)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "银色系，PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，保时捷GT银（Porsche GT Silver），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #BDBFC0，Lab 辅助参考 Lab(L=77.26, a=-0.65, b=-0.54)"
+      },
+      "tags": [
+        "PET",
+        "银色系",
+        "保时捷GT银",
+        "Porsche GT Silver"
+      ]
+    },
+    {
+      "id": "A-005",
+      "source_id": "NO.004",
+      "serial": "A-005",
+      "names": {
+        "zh": "保时捷冰莓粉",
+        "en": "Porsche Subglacial Berry Pink",
+        "aliases": [
+          "A-005",
+          "保时捷冰莓粉",
+          "Porsche Subglacial Berry Pink",
+          "porschesubglacialberrypink"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 68.08,
+          "a": 7.18,
+          "b": 3.28
+        },
+        "hex": "#B5A1A0",
+        "family": "粉色系"
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/A-005-measurement-27.png",
+        "source_swatch_name": "A-005-measurement-27.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 27,
+        "measured_at": "2026-05-25",
+        "preview_lab": {
+          "L": 68.08,
+          "a": 7.18,
+          "b": 3.28
+        }
+      },
+      "prompt": {
+        "color_name": "保时捷冰莓粉 / Porsche Subglacial Berry Pink",
+        "color_code": "A-005",
+        "color_value": "#B5A1A0",
+        "lab_value": "Lab(L=68.08, a=7.18, b=3.28)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "粉色系，PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，保时捷冰莓粉（Porsche Subglacial Berry Pink），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #B5A1A0，Lab 辅助参考 Lab(L=68.08, a=7.18, b=3.28)"
+      },
+      "tags": [
+        "PET",
+        "粉色系",
+        "保时捷冰莓粉",
+        "Porsche Subglacial Berry Pink"
+      ]
+    },
+    {
+      "id": "A-006",
+      "source_id": "NO.005",
+      "serial": "A-006",
+      "names": {
+        "zh": "PET保时捷熔岩橙",
+        "en": "Porsche Lava Orange",
+        "aliases": [
+          "A-006",
+          "PET保时捷熔岩橙",
+          "Porsche Lava Orange",
+          "pet",
+          "porschelavaorange"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 44.42,
+          "a": 41.17,
+          "b": 25.01
+        },
+        "hex": "#AB4842",
+        "family": "橙色系"
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/A-006-measurement-28.png",
+        "source_swatch_name": "A-006-measurement-28.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 28,
+        "measured_at": "2026-05-25",
+        "preview_lab": {
+          "L": 44.42,
+          "a": 41.17,
+          "b": 25.01
+        }
+      },
+      "prompt": {
+        "color_name": "PET保时捷熔岩橙 / Porsche Lava Orange",
+        "color_code": "A-006",
+        "color_value": "#AB4842",
+        "lab_value": "Lab(L=44.42, a=41.17, b=25.01)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "橙色系，PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，PET保时捷熔岩橙（Porsche Lava Orange），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #AB4842，Lab 辅助参考 Lab(L=44.42, a=41.17, b=25.01)"
+      },
+      "tags": [
+        "PET",
+        "橙色系",
+        "PET保时捷熔岩橙",
+        "Porsche Lava Orange"
+      ]
+    },
+    {
+      "id": "A-007",
+      "source_id": "NO.006",
+      "serial": "A-007",
+      "names": {
+        "zh": "保时捷粉猪",
+        "en": "Porsche Peppa Pink",
+        "aliases": [
+          "A-007",
+          "保时捷粉猪",
+          "Porsche Peppa Pink",
+          "porschepeppapink"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 63.7,
+          "a": 29.05,
+          "b": 20.07
+        },
+        "hex": "#D28678",
+        "family": "粉色系"
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/A-007-measurement-29.png",
+        "source_swatch_name": "A-007-measurement-29.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 29,
+        "measured_at": "2026-05-25",
+        "preview_lab": {
+          "L": 63.7,
+          "a": 29.05,
+          "b": 20.07
+        }
+      },
+      "prompt": {
+        "color_name": "保时捷粉猪 / Porsche Peppa Pink",
+        "color_code": "A-007",
+        "color_value": "#D28678",
+        "lab_value": "Lab(L=63.7, a=29.05, b=20.07)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "粉色系，PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，保时捷粉猪（Porsche Peppa Pink），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #D28678，Lab 辅助参考 Lab(L=63.7, a=29.05, b=20.07)"
+      },
+      "tags": [
+        "PET",
+        "粉色系",
+        "保时捷粉猪",
+        "Porsche Peppa Pink"
+      ]
+    },
+    {
+      "id": "A-008",
+      "source_id": "NO.007",
+      "serial": "A-008",
+      "names": {
+        "zh": "保时蜥蜴绿",
+        "en": "Porsche Lizard Green",
+        "aliases": [
+          "A-008",
+          "保时蜥蜴绿",
+          "Porsche Lizard Green",
+          "porschelizardgreen"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 60.33,
+          "a": -29.31,
+          "b": 37.68
+        },
+        "hex": "#6B9F4B",
+        "family": "绿色系"
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/A-008-measurement-30.png",
+        "source_swatch_name": "A-008-measurement-30.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 30,
+        "measured_at": "2026-05-25",
+        "preview_lab": {
+          "L": 60.33,
+          "a": -29.31,
+          "b": 37.68
+        }
+      },
+      "prompt": {
+        "color_name": "保时蜥蜴绿 / Porsche Lizard Green",
+        "color_code": "A-008",
+        "color_value": "#6B9F4B",
+        "lab_value": "Lab(L=60.33, a=-29.31, b=37.68)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "绿色系，PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，保时蜥蜴绿（Porsche Lizard Green），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #6B9F4B，Lab 辅助参考 Lab(L=60.33, a=-29.31, b=37.68)"
+      },
+      "tags": [
+        "PET",
+        "绿色系",
+        "保时蜥蜴绿",
+        "Porsche Lizard Green"
+      ]
+    },
+    {
+      "id": "A-009",
+      "source_id": "NO.008",
+      "serial": "A-009",
+      "names": {
+        "zh": "保时捷迈啊密蓝",
+        "en": "Porsche Miami Blue",
+        "aliases": [
+          "A-009",
+          "保时捷迈啊密蓝",
+          "Porsche Miami Blue",
+          "porschemiamiblue"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 46.33,
+          "a": -22.51,
+          "b": -13.12
+        },
+        "hex": "#287983",
+        "family": "蓝色系"
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/A-009-measurement-31.png",
+        "source_swatch_name": "A-009-measurement-31.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 31,
+        "measured_at": "2026-05-25",
+        "preview_lab": {
+          "L": 46.33,
+          "a": -22.51,
+          "b": -13.12
+        }
+      },
+      "prompt": {
+        "color_name": "保时捷迈啊密蓝 / Porsche Miami Blue",
+        "color_code": "A-009",
+        "color_value": "#287983",
+        "lab_value": "Lab(L=46.33, a=-22.51, b=-13.12)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "蓝色系，PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，保时捷迈啊密蓝（Porsche Miami Blue），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #287983，Lab 辅助参考 Lab(L=46.33, a=-22.51, b=-13.12)"
+      },
+      "tags": [
+        "PET",
+        "蓝色系",
+        "保时捷迈啊密蓝",
+        "Porsche Miami Blue"
+      ]
+    },
+    {
+      "id": "A-010",
+      "source_id": "NO.009",
+      "serial": "A-010",
+      "names": {
+        "zh": "保时捷竞速黄",
+        "en": "Porsche Racing Yellow",
+        "aliases": [
+          "A-010",
+          "保时捷竞速黄",
+          "Porsche Racing Yellow",
+          "porscheracingyellow"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 77.24,
+          "a": 7.17,
+          "b": 70.16
+        },
+        "hex": "#E4B82E",
+        "family": "黄色系"
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/A-010-measurement-32.png",
+        "source_swatch_name": "A-010-measurement-32.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 32,
+        "measured_at": "2026-05-25",
+        "preview_lab": {
+          "L": 77.24,
+          "a": 7.17,
+          "b": 70.16
+        }
+      },
+      "prompt": {
+        "color_name": "保时捷竞速黄 / Porsche Racing Yellow",
+        "color_code": "A-010",
+        "color_value": "#E4B82E",
+        "lab_value": "Lab(L=77.24, a=7.17, b=70.16)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "黄色系，PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，保时捷竞速黄（Porsche Racing Yellow），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #E4B82E，Lab 辅助参考 Lab(L=77.24, a=7.17, b=70.16)"
+      },
+      "tags": [
+        "PET",
+        "黄色系",
+        "保时捷竞速黄",
+        "Porsche Racing Yellow"
+      ]
+    },
+    {
+      "id": "A-011",
+      "source_id": "NO.010",
+      "serial": "A-011",
+      "names": {
+        "zh": "AMG魔焰绿",
+        "en": "AMG Fire Light Green",
+        "aliases": [
+          "A-011",
+          "AMG魔焰绿",
+          "AMG Fire Light Green",
+          "amg",
+          "amgfirelightgreen"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 56.61,
+          "a": -32.37,
+          "b": 27.14
+        },
+        "hex": "#559656",
+        "family": "绿色系"
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/A-011-measurement-33.png",
+        "source_swatch_name": "A-011-measurement-33.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 33,
+        "measured_at": "2026-05-25",
+        "preview_lab": {
+          "L": 56.61,
+          "a": -32.37,
+          "b": 27.14
+        }
+      },
+      "prompt": {
+        "color_name": "AMG魔焰绿 / AMG Fire Light Green",
+        "color_code": "A-011",
+        "color_value": "#559656",
+        "lab_value": "Lab(L=56.61, a=-32.37, b=27.14)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "绿色系，PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，AMG魔焰绿（AMG Fire Light Green），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #559656，Lab 辅助参考 Lab(L=56.61, a=-32.37, b=27.14)"
+      },
+      "tags": [
+        "PET",
+        "绿色系",
+        "AMG魔焰绿",
+        "AMG Fire Light Green"
+      ]
+    },
+    {
+      "id": "A-012",
+      "source_id": "NO.011",
+      "serial": "A-012",
+      "names": {
+        "zh": "AMG沙漠黄",
+        "en": "AMG Desert Yellow",
+        "aliases": [
+          "A-012",
+          "AMG沙漠黄",
+          "AMG Desert Yellow",
+          "amg",
+          "amgdesertyellow"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 56.65,
+          "a": 4.88,
+          "b": 18.72
+        },
+        "hex": "#998467",
+        "family": "黄色系"
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/A-012-measurement-34.png",
+        "source_swatch_name": "A-012-measurement-34.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 34,
+        "measured_at": "2026-05-25",
+        "preview_lab": {
+          "L": 56.65,
+          "a": 4.88,
+          "b": 18.72
+        }
+      },
+      "prompt": {
+        "color_name": "AMG沙漠黄 / AMG Desert Yellow",
+        "color_code": "A-012",
+        "color_value": "#998467",
+        "lab_value": "Lab(L=56.65, a=4.88, b=18.72)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "黄色系，PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，AMG沙漠黄（AMG Desert Yellow），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #998467，Lab 辅助参考 Lab(L=56.65, a=4.88, b=18.72)"
+      },
+      "tags": [
+        "PET",
+        "黄色系",
+        "AMG沙漠黄",
+        "AMG Desert Yellow"
+      ]
+    },
+    {
+      "id": "A-013",
+      "source_id": "NO.012",
+      "serial": "A-013",
+      "names": {
+        "zh": "AMG瓷器蓝",
+        "en": "AMG Cloisonne",
+        "aliases": [
+          "A-013",
+          "AMG瓷器蓝",
+          "AMG Cloisonne",
+          "amg",
+          "amgcloisonne"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 45.09,
+          "a": -2.95,
+          "b": -12.78
+        },
+        "hex": "#5C6D80",
+        "family": "蓝色系"
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/A-013-measurement-35.png",
+        "source_swatch_name": "A-013-measurement-35.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 35,
+        "measured_at": "2026-05-25",
+        "preview_lab": {
+          "L": 45.09,
+          "a": -2.95,
+          "b": -12.78
+        }
+      },
+      "prompt": {
+        "color_name": "AMG瓷器蓝 / AMG Cloisonne",
+        "color_code": "A-013",
+        "color_value": "#5C6D80",
+        "lab_value": "Lab(L=45.09, a=-2.95, b=-12.78)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "蓝色系，PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，AMG瓷器蓝（AMG Cloisonne），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #5C6D80，Lab 辅助参考 Lab(L=45.09, a=-2.95, b=-12.78)"
+      },
+      "tags": [
+        "PET",
+        "蓝色系",
+        "AMG瓷器蓝",
+        "AMG Cloisonne"
+      ]
+    },
+    {
+      "id": "A-014",
+      "source_id": "NO.013",
+      "serial": "A-014",
+      "names": {
+        "zh": "奔驰祖母石绿",
+        "en": "Benz Emerald",
+        "aliases": [
+          "A-014",
+          "奔驰祖母石绿",
+          "Benz Emerald",
+          "benzemerald"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 25.79,
+          "a": -2.84,
+          "b": -0.02
+        },
+        "hex": "#383E3D",
+        "family": "绿色系"
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/A-014-measurement-36.png",
+        "source_swatch_name": "A-014-measurement-36.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 36,
+        "measured_at": "2026-05-25",
+        "preview_lab": {
+          "L": 25.79,
+          "a": -2.84,
+          "b": -0.02
+        }
+      },
+      "prompt": {
+        "color_name": "奔驰祖母石绿 / Benz Emerald",
+        "color_code": "A-014",
+        "color_value": "#383E3D",
+        "lab_value": "Lab(L=25.79, a=-2.84, b=-0.02)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "绿色系，PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，奔驰祖母石绿（Benz Emerald），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #383E3D，Lab 辅助参考 Lab(L=25.79, a=-2.84, b=-0.02)"
+      },
+      "tags": [
+        "PET",
+        "绿色系",
+        "奔驰祖母石绿",
+        "Benz Emerald"
+      ]
+    },
+    {
+      "id": "A-015",
+      "source_id": "NO.014",
+      "serial": "A-015",
+      "names": {
+        "zh": "迈巴赫香槟金",
+        "en": "Maybach Champagne Gold",
+        "aliases": [
+          "A-015",
+          "迈巴赫香槟金",
+          "Maybach Champagne Gold",
+          "maybachchampagnegold"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 79.32,
+          "a": 4.11,
+          "b": 8.07
+        },
+        "hex": "#D1C2B6",
+        "family": "金色系"
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/A-015-measurement-37.png",
+        "source_swatch_name": "A-015-measurement-37.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 37,
+        "measured_at": "2026-05-25",
+        "preview_lab": {
+          "L": 79.32,
+          "a": 4.11,
+          "b": 8.07
+        }
+      },
+      "prompt": {
+        "color_name": "迈巴赫香槟金 / Maybach Champagne Gold",
+        "color_code": "A-015",
+        "color_value": "#D1C2B6",
+        "lab_value": "Lab(L=79.32, a=4.11, b=8.07)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "金色系，PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，迈巴赫香槟金（Maybach Champagne Gold），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #D1C2B6，Lab 辅助参考 Lab(L=79.32, a=4.11, b=8.07)"
+      },
+      "tags": [
+        "PET",
+        "金色系",
+        "迈巴赫香槟金",
+        "Maybach Champagne Gold"
+      ]
+    },
+    {
+      "id": "A-016",
+      "source_id": "NO.015",
+      "serial": "A-016",
+      "names": {
+        "zh": "奥迪RS纳多灰",
+        "en": "Audi RS Nardo Grey",
+        "aliases": [
+          "A-016",
+          "奥迪RS纳多灰",
+          "Audi RS Nardo Grey",
+          "rs",
+          "audirsnardogrey"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 41.85,
+          "a": 0.31,
+          "b": -0.73
+        },
+        "hex": "#636364",
+        "family": "灰色系"
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/A-016-measurement-38.png",
+        "source_swatch_name": "A-016-measurement-38.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 38,
+        "measured_at": "2026-05-25",
+        "preview_lab": {
+          "L": 41.85,
+          "a": 0.31,
+          "b": -0.73
+        }
+      },
+      "prompt": {
+        "color_name": "奥迪RS纳多灰 / Audi RS Nardo Grey",
+        "color_code": "A-016",
+        "color_value": "#636364",
+        "lab_value": "Lab(L=41.85, a=0.31, b=-0.73)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "灰色系，PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，奥迪RS纳多灰（Audi RS Nardo Grey），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #636364，Lab 辅助参考 Lab(L=41.85, a=0.31, b=-0.73)"
+      },
+      "tags": [
+        "PET",
+        "灰色系",
+        "奥迪RS纳多灰",
+        "Audi RS Nardo Grey"
+      ]
+    },
+    {
+      "id": "A-017",
+      "source_id": "NO.016",
+      "serial": "A-017",
+      "names": {
+        "zh": "奥迪赛道黄",
+        "en": "Audi Track Yellow",
+        "aliases": [
+          "A-017",
+          "奥迪赛道黄",
+          "Audi Track Yellow",
+          "auditrackyellow"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 82.24,
+          "a": -22.57,
+          "b": 75.6
+        },
+        "hex": "#C1D722",
+        "family": "黄色系"
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/A-017-measurement-39.png",
+        "source_swatch_name": "A-017-measurement-39.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 39,
+        "measured_at": "2026-05-25",
+        "preview_lab": {
+          "L": 82.24,
+          "a": -22.57,
+          "b": 75.6
+        }
+      },
+      "prompt": {
+        "color_name": "奥迪赛道黄 / Audi Track Yellow",
+        "color_code": "A-017",
+        "color_value": "#C1D722",
+        "lab_value": "Lab(L=82.24, a=-22.57, b=75.6)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "黄色系，PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，奥迪赛道黄（Audi Track Yellow），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #C1D722，Lab 辅助参考 Lab(L=82.24, a=-22.57, b=75.6)"
+      },
+      "tags": [
+        "PET",
+        "黄色系",
+        "奥迪赛道黄",
+        "Audi Track Yellow"
+      ]
+    },
+    {
+      "id": "A-018",
+      "source_id": "NO.017",
+      "serial": "A-018",
+      "names": {
+        "zh": "奥迪荧光红",
+        "en": "Audi Fluorescent Red",
+        "aliases": [
+          "A-018",
+          "奥迪荧光红",
+          "Audi Fluorescent Red",
+          "audifluorescentred"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 49.29,
+          "a": 51.28,
+          "b": 13.49
+        },
+        "hex": "#C44961",
+        "family": "红色系"
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/A-018-measurement-40.png",
+        "source_swatch_name": "A-018-measurement-40.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 40,
+        "measured_at": "2026-05-25",
+        "preview_lab": {
+          "L": 49.29,
+          "a": 51.28,
+          "b": 13.49
+        }
+      },
+      "prompt": {
+        "color_name": "奥迪荧光红 / Audi Fluorescent Red",
+        "color_code": "A-018",
+        "color_value": "#C44961",
+        "lab_value": "Lab(L=49.29, a=51.28, b=13.49)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "红色系，PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，奥迪荧光红（Audi Fluorescent Red），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #C44961，Lab 辅助参考 Lab(L=49.29, a=51.28, b=13.49)"
+      },
+      "tags": [
+        "PET",
+        "红色系",
+        "奥迪荧光红",
+        "Audi Fluorescent Red"
+      ]
+    },
+    {
+      "id": "A-019",
+      "source_id": "NO.018",
+      "serial": "A-019",
+      "names": {
+        "zh": "奥迪地狱绿",
+        "en": "Audi Hell Green",
+        "aliases": [
+          "A-019",
+          "奥迪地狱绿",
+          "Audi Hell Green",
+          "audihellgreen"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 39.51,
+          "a": -19.72,
+          "b": -0.51
+        },
+        "hex": "#33665D",
+        "family": "绿色系"
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/A-019-measurement-41.png",
+        "source_swatch_name": "A-019-measurement-41.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 41,
+        "measured_at": "2026-05-25",
+        "preview_lab": {
+          "L": 39.51,
+          "a": -19.72,
+          "b": -0.51
+        }
+      },
+      "prompt": {
+        "color_name": "奥迪地狱绿 / Audi Hell Green",
+        "color_code": "A-019",
+        "color_value": "#33665D",
+        "lab_value": "Lab(L=39.51, a=-19.72, b=-0.51)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "绿色系，PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，奥迪地狱绿（Audi Hell Green），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #33665D，Lab 辅助参考 Lab(L=39.51, a=-19.72, b=-0.51)"
+      },
+      "tags": [
+        "PET",
+        "绿色系",
+        "奥迪地狱绿",
+        "Audi Hell Green"
+      ]
+    },
+    {
+      "id": "A-020",
+      "source_id": "NO.019",
+      "serial": "A-020",
+      "names": {
+        "zh": "理想海风蓝",
+        "en": "Li Auto Sea Breeze Blue",
+        "aliases": [
+          "A-020",
+          "理想海风蓝",
+          "Li Auto Sea Breeze Blue",
+          "liautoseabreezeblue"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 66.78,
+          "a": -10.93,
+          "b": -10.67
+        },
+        "hex": "#84A9B5",
+        "family": "蓝色系"
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/A-020-measurement-42.png",
+        "source_swatch_name": "A-020-measurement-42.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 42,
+        "measured_at": "2026-05-25",
+        "preview_lab": {
+          "L": 66.78,
+          "a": -10.93,
+          "b": -10.67
+        }
+      },
+      "prompt": {
+        "color_name": "理想海风蓝 / Li Auto Sea Breeze Blue",
+        "color_code": "A-020",
+        "color_value": "#84A9B5",
+        "lab_value": "Lab(L=66.78, a=-10.93, b=-10.67)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "蓝色系，PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，理想海风蓝（Li Auto Sea Breeze Blue），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #84A9B5，Lab 辅助参考 Lab(L=66.78, a=-10.93, b=-10.67)"
+      },
+      "tags": [
+        "PET",
+        "蓝色系",
+        "理想海风蓝",
+        "Li Auto Sea Breeze Blue"
+      ]
+    },
+    {
+      "id": "A-021",
+      "source_id": "NO.020",
+      "serial": "A-021",
+      "names": {
+        "zh": "捷豹英伦绿",
+        "en": "Jaguar British Green",
+        "aliases": [
+          "A-021",
+          "捷豹英伦绿",
+          "Jaguar British Green",
+          "jaguarbritishgreen"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 28.97,
+          "a": -6.1,
+          "b": 2.77
+        },
+        "hex": "#3C4740",
+        "family": "绿色系"
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/A-021-measurement-43.png",
+        "source_swatch_name": "A-021-measurement-43.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 43,
+        "measured_at": "2026-05-25",
+        "preview_lab": {
+          "L": 28.97,
+          "a": -6.1,
+          "b": 2.77
+        }
+      },
+      "prompt": {
+        "color_name": "捷豹英伦绿 / Jaguar British Green",
+        "color_code": "A-021",
+        "color_value": "#3C4740",
+        "lab_value": "Lab(L=28.97, a=-6.1, b=2.77)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "绿色系，PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，捷豹英伦绿（Jaguar British Green），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #3C4740，Lab 辅助参考 Lab(L=28.97, a=-6.1, b=2.77)"
+      },
+      "tags": [
+        "PET",
+        "绿色系",
+        "捷豹英伦绿",
+        "Jaguar British Green"
+      ]
+    },
+    {
+      "id": "A-022",
+      "source_id": "NO.021",
+      "serial": "A-022",
+      "names": {
+        "zh": "捷豹黑玫瑰",
+        "en": "Jaguar Black Rose",
+        "aliases": [
+          "A-022",
+          "捷豹黑玫瑰",
+          "Jaguar Black Rose",
+          "jaguarblackrose"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 27.63,
+          "a": 7.33,
+          "b": -1.66
+        },
+        "hex": "#4B3D44",
+        "family": "紫色系"
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/A-022-measurement-44.png",
+        "source_swatch_name": "A-022-measurement-44.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 44,
+        "measured_at": "2026-05-25",
+        "preview_lab": {
+          "L": 27.63,
+          "a": 7.33,
+          "b": -1.66
+        }
+      },
+      "prompt": {
+        "color_name": "捷豹黑玫瑰 / Jaguar Black Rose",
+        "color_code": "A-022",
+        "color_value": "#4B3D44",
+        "lab_value": "Lab(L=27.63, a=7.33, b=-1.66)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "紫色系，PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，捷豹黑玫瑰（Jaguar Black Rose），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #4B3D44，Lab 辅助参考 Lab(L=27.63, a=7.33, b=-1.66)"
+      },
+      "tags": [
+        "PET",
+        "紫色系",
+        "捷豹黑玫瑰",
+        "Jaguar Black Rose"
+      ]
+    },
+    {
+      "id": "A-023",
+      "source_id": "NO.022",
+      "serial": "A-023",
+      "names": {
+        "zh": "阿斯顿马丁松石绿",
+        "en": "Aston Martin Turquoise Green",
+        "aliases": [
+          "A-023",
+          "阿斯顿马丁松石绿",
+          "Aston Martin Turquoise Green",
+          "astonmartinturquoisegreen"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 46.2,
+          "a": -7.15,
+          "b": 4.19
+        },
+        "hex": "#637166",
+        "family": "绿色系"
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/A-023-measurement-45.png",
+        "source_swatch_name": "A-023-measurement-45.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 45,
+        "measured_at": "2026-05-25",
+        "preview_lab": {
+          "L": 46.2,
+          "a": -7.15,
+          "b": 4.19
+        }
+      },
+      "prompt": {
+        "color_name": "阿斯顿马丁松石绿 / Aston Martin Turquoise Green",
+        "color_code": "A-023",
+        "color_value": "#637166",
+        "lab_value": "Lab(L=46.2, a=-7.15, b=4.19)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "绿色系，PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，阿斯顿马丁松石绿（Aston Martin Turquoise Green），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #637166，Lab 辅助参考 Lab(L=46.2, a=-7.15, b=4.19)"
+      },
+      "tags": [
+        "PET",
+        "绿色系",
+        "阿斯顿马丁松石绿",
+        "Aston Martin Turquoise Green"
+      ]
+    },
+    {
+      "id": "A-024",
+      "source_id": "NO.023",
+      "serial": "A-024",
+      "names": {
+        "zh": "法拉利红",
+        "en": "Ferrari Red",
+        "aliases": [
+          "A-024",
+          "法拉利红",
+          "Ferrari Red",
+          "ferrarired"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 46.41,
+          "a": 51.72,
+          "b": 27.48
+        },
+        "hex": "#BF4044",
+        "family": "红色系"
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/A-024-measurement-46.png",
+        "source_swatch_name": "A-024-measurement-46.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 46,
+        "measured_at": "2026-05-25",
+        "preview_lab": {
+          "L": 46.41,
+          "a": 51.72,
+          "b": 27.48
+        }
+      },
+      "prompt": {
+        "color_name": "法拉利红 / Ferrari Red",
+        "color_code": "A-024",
+        "color_value": "#BF4044",
+        "lab_value": "Lab(L=46.41, a=51.72, b=27.48)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "红色系，PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，法拉利红（Ferrari Red），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #BF4044，Lab 辅助参考 Lab(L=46.41, a=51.72, b=27.48)"
+      },
+      "tags": [
+        "PET",
+        "红色系",
+        "法拉利红",
+        "Ferrari Red"
+      ]
+    },
+    {
+      "id": "A-025",
+      "source_id": "NO.024",
+      "serial": "A-025",
+      "names": {
+        "zh": "宾利暗夜绿",
+        "en": "Bentley Dark Green",
+        "aliases": [
+          "A-025",
+          "宾利暗夜绿",
+          "Bentley Dark Green",
+          "bentleydarkgreen"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 29.22,
+          "a": -6.81,
+          "b": -2.63
+        },
+        "hex": "#374849",
+        "family": "绿色系"
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/A-025-measurement-47.png",
+        "source_swatch_name": "A-025-measurement-47.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 47,
+        "measured_at": "2026-05-25",
+        "preview_lab": {
+          "L": 29.22,
+          "a": -6.81,
+          "b": -2.63
+        }
+      },
+      "prompt": {
+        "color_name": "宾利暗夜绿 / Bentley Dark Green",
+        "color_code": "A-025",
+        "color_value": "#374849",
+        "lab_value": "Lab(L=29.22, a=-6.81, b=-2.63)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "绿色系，PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，宾利暗夜绿（Bentley Dark Green），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #374849，Lab 辅助参考 Lab(L=29.22, a=-6.81, b=-2.63)"
+      },
+      "tags": [
+        "PET",
+        "绿色系",
+        "宾利暗夜绿",
+        "Bentley Dark Green"
+      ]
+    },
+    {
+      "id": "A-026",
+      "source_id": "NO.025",
+      "serial": "A-026",
+      "names": {
+        "zh": "兰博基尼爆炸紫",
+        "en": "Lambokini Explosive Purple",
+        "aliases": [
+          "A-026",
+          "兰博基尼爆炸紫",
+          "Lambokini Explosive Purple",
+          "lambokiniexplosivepurple"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 38.31,
+          "a": 31.25,
+          "b": -48.38
+        },
+        "hex": "#6948AA",
+        "family": "紫色系"
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/A-026-measurement-48.png",
+        "source_swatch_name": "A-026-measurement-48.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 48,
+        "measured_at": "2026-05-25",
+        "preview_lab": {
+          "L": 38.31,
+          "a": 31.25,
+          "b": -48.38
+        }
+      },
+      "prompt": {
+        "color_name": "兰博基尼爆炸紫 / Lambokini Explosive Purple",
+        "color_code": "A-026",
+        "color_value": "#6948AA",
+        "lab_value": "Lab(L=38.31, a=31.25, b=-48.38)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "紫色系，PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，兰博基尼爆炸紫（Lambokini Explosive Purple），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #6948AA，Lab 辅助参考 Lab(L=38.31, a=31.25, b=-48.38)"
+      },
+      "tags": [
+        "PET",
+        "紫色系",
+        "兰博基尼爆炸紫",
+        "Lambokini Explosive Purple"
+      ]
+    },
+    {
+      "id": "A-027",
+      "source_id": "NO.026",
+      "serial": "A-027",
+      "names": {
+        "zh": "劳斯莱斯战斗绿",
+        "en": "Rolls Royce Combat Green",
+        "aliases": [
+          "A-027",
+          "劳斯莱斯战斗绿",
+          "Rolls Royce Combat Green",
+          "rollsroycecombatgreen"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 35.93,
+          "a": -2.09,
+          "b": 10.85
+        },
+        "hex": "#565543",
+        "family": "绿色系"
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/A-027-measurement-49.png",
+        "source_swatch_name": "A-027-measurement-49.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 49,
+        "measured_at": "2026-05-25",
+        "preview_lab": {
+          "L": 35.93,
+          "a": -2.09,
+          "b": 10.85
+        }
+      },
+      "prompt": {
+        "color_name": "劳斯莱斯战斗绿 / Rolls Royce Combat Green",
+        "color_code": "A-027",
+        "color_value": "#565543",
+        "lab_value": "Lab(L=35.93, a=-2.09, b=10.85)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "绿色系，PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，劳斯莱斯战斗绿（Rolls Royce Combat Green），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #565543，Lab 辅助参考 Lab(L=35.93, a=-2.09, b=10.85)"
+      },
+      "tags": [
+        "PET",
+        "绿色系",
+        "劳斯莱斯战斗绿",
+        "Rolls Royce Combat Green"
+      ]
+    },
+    {
+      "id": "A-029",
+      "source_id": "NO.027",
+      "serial": "A-029",
+      "names": {
+        "zh": "宾利深翠绿",
+        "en": "Bentley Deep Emerald Green",
+        "aliases": [
+          "A-029",
+          "宾利深翠绿",
+          "Bentley Deep Emerald Green",
+          "bentleydeepemeraldgreen"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 27.68,
+          "a": -4.58,
+          "b": -0.26
+        },
+        "hex": "#3A4442",
+        "family": "绿色系"
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/A-029-measurement-50.png",
+        "source_swatch_name": "A-029-measurement-50.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 50,
+        "measured_at": "2026-05-25",
+        "preview_lab": {
+          "L": 27.68,
+          "a": -4.58,
+          "b": -0.26
+        }
+      },
+      "prompt": {
+        "color_name": "宾利深翠绿 / Bentley Deep Emerald Green",
+        "color_code": "A-029",
+        "color_value": "#3A4442",
+        "lab_value": "Lab(L=27.68, a=-4.58, b=-0.26)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "绿色系，PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，宾利深翠绿（Bentley Deep Emerald Green），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #3A4442，Lab 辅助参考 Lab(L=27.68, a=-4.58, b=-0.26)"
+      },
+      "tags": [
+        "PET",
+        "绿色系",
+        "宾利深翠绿",
+        "Bentley Deep Emerald Green"
+      ]
+    },
+    {
+      "id": "A-030",
+      "source_id": "NO.028",
+      "serial": "A-030",
+      "names": {
+        "zh": "保时捷海王星蓝",
+        "en": "Porsche Neptune Blue",
+        "aliases": [
+          "A-030",
+          "保时捷海王星蓝",
+          "Porsche Neptune Blue",
+          "porscheneptuneblue"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 32.42,
+          "a": -4.5,
+          "b": -10.29
+        },
+        "hex": "#3D4F5C",
+        "family": "蓝色系"
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/A-030-measurement-51.png",
+        "source_swatch_name": "A-030-measurement-51.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 51,
+        "measured_at": "2026-05-25",
+        "preview_lab": {
+          "L": 32.42,
+          "a": -4.5,
+          "b": -10.29
+        }
+      },
+      "prompt": {
+        "color_name": "保时捷海王星蓝 / Porsche Neptune Blue",
+        "color_code": "A-030",
+        "color_value": "#3D4F5C",
+        "lab_value": "Lab(L=32.42, a=-4.5, b=-10.29)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "蓝色系，PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，保时捷海王星蓝（Porsche Neptune Blue），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #3D4F5C，Lab 辅助参考 Lab(L=32.42, a=-4.5, b=-10.29)"
+      },
+      "tags": [
+        "PET",
+        "蓝色系",
+        "保时捷海王星蓝",
+        "Porsche Neptune Blue"
+      ]
+    },
+    {
+      "id": "A-031",
+      "source_id": "NO.029",
+      "serial": "A-031",
+      "names": {
+        "zh": "奥迪天云灰",
+        "en": "Audi Cloud Sky Grey",
+        "aliases": [
+          "A-031",
+          "奥迪天云灰",
+          "Audi Cloud Sky Grey",
+          "audicloudskygrey"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 45.51,
+          "a": -0.78,
+          "b": -0.51
+        },
+        "hex": "#6A6C6D",
+        "family": "灰色系"
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/A-031-measurement-52.png",
+        "source_swatch_name": "A-031-measurement-52.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 52,
+        "measured_at": "2026-05-25",
+        "preview_lab": {
+          "L": 45.51,
+          "a": -0.78,
+          "b": -0.51
+        }
+      },
+      "prompt": {
+        "color_name": "奥迪天云灰 / Audi Cloud Sky Grey",
+        "color_code": "A-031",
+        "color_value": "#6A6C6D",
+        "lab_value": "Lab(L=45.51, a=-0.78, b=-0.51)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "灰色系，PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，奥迪天云灰（Audi Cloud Sky Grey），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #6A6C6D，Lab 辅助参考 Lab(L=45.51, a=-0.78, b=-0.51)"
+      },
+      "tags": [
+        "PET",
+        "灰色系",
+        "奥迪天云灰",
+        "Audi Cloud Sky Grey"
+      ]
+    },
+    {
+      "id": "A-032",
+      "source_id": "NO.030",
+      "serial": "A-032",
+      "names": {
+        "zh": "宾利煤炭灰",
+        "en": "Bentley Coal Grey",
+        "aliases": [
+          "A-032",
+          "宾利煤炭灰",
+          "Bentley Coal Grey",
+          "bentleycoalgrey"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 45.95,
+          "a": -1.32,
+          "b": -2.57
+        },
+        "hex": "#696E71",
+        "family": "灰色系"
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/A-032-measurement-53.png",
+        "source_swatch_name": "A-032-measurement-53.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 53,
+        "measured_at": "2026-05-25",
+        "preview_lab": {
+          "L": 45.95,
+          "a": -1.32,
+          "b": -2.57
+        }
+      },
+      "prompt": {
+        "color_name": "宾利煤炭灰 / Bentley Coal Grey",
+        "color_code": "A-032",
+        "color_value": "#696E71",
+        "lab_value": "Lab(L=45.95, a=-1.32, b=-2.57)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "灰色系，PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，宾利煤炭灰（Bentley Coal Grey），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #696E71，Lab 辅助参考 Lab(L=45.95, a=-1.32, b=-2.57)"
+      },
+      "tags": [
+        "PET",
+        "灰色系",
+        "宾利煤炭灰",
+        "Bentley Coal Grey"
+      ]
+    },
+    {
+      "id": "A-033",
+      "source_id": "NO.031",
+      "serial": "A-033",
+      "names": {
+        "zh": "奥迪浆果紫",
+        "en": "Audi Berry Purple",
+        "aliases": [
+          "A-033",
+          "奥迪浆果紫",
+          "Audi Berry Purple",
+          "audiberrypurple"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 34.03,
+          "a": 25.2,
+          "b": -11.25
+        },
+        "hex": "#704063",
+        "family": "紫色系"
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/A-033-measurement-54.png",
+        "source_swatch_name": "A-033-measurement-54.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 54,
+        "measured_at": "2026-05-25",
+        "preview_lab": {
+          "L": 34.03,
+          "a": 25.2,
+          "b": -11.25
+        }
+      },
+      "prompt": {
+        "color_name": "奥迪浆果紫 / Audi Berry Purple",
+        "color_code": "A-033",
+        "color_value": "#704063",
+        "lab_value": "Lab(L=34.03, a=25.2, b=-11.25)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "紫色系，PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，奥迪浆果紫（Audi Berry Purple），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #704063，Lab 辅助参考 Lab(L=34.03, a=25.2, b=-11.25)"
+      },
+      "tags": [
+        "PET",
+        "紫色系",
+        "奥迪浆果紫",
+        "Audi Berry Purple"
+      ]
+    },
+    {
+      "id": "B-101",
+      "source_id": "NO.032",
+      "serial": "B-101",
+      "names": {
+        "zh": "水晶白",
+        "en": "Crystal White",
+        "aliases": [
+          "B-101",
+          "水晶白",
+          "Crystal White",
+          "crystalwhite"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 89.66,
+          "a": -1.64,
+          "b": 0.07
+        },
+        "hex": "#DEE2E1",
+        "family": "白色系"
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/B-101-measurement-55.png",
+        "source_swatch_name": "B-101-measurement-55.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 55,
+        "measured_at": "2026-05-25",
+        "preview_lab": {
+          "L": 89.66,
+          "a": -1.64,
+          "b": 0.07
+        }
+      },
+      "prompt": {
+        "color_name": "水晶白 / Crystal White",
+        "color_code": "B-101",
+        "color_value": "#DEE2E1",
+        "lab_value": "Lab(L=89.66, a=-1.64, b=0.07)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "白色系，PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，水晶白（Crystal White），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #DEE2E1，Lab 辅助参考 Lab(L=89.66, a=-1.64, b=0.07)"
+      },
+      "tags": [
+        "PET",
+        "白色系",
+        "水晶白",
+        "Crystal White"
+      ]
+    },
+    {
+      "id": "B-102",
+      "source_id": "NO.033",
+      "serial": "B-102",
+      "names": {
+        "zh": "水晶黑",
+        "en": "Crystal Black",
+        "aliases": [
+          "B-102",
+          "水晶黑",
+          "Crystal Black",
+          "crystalblack"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 24.2,
+          "a": -0.82,
+          "b": -1.89
+        },
+        "hex": "#37393B",
+        "family": "黑色系"
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/B-102-measurement-57.png",
+        "source_swatch_name": "B-102-measurement-57.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 57,
+        "measured_at": "2026-05-25",
+        "preview_lab": {
+          "L": 23.88,
+          "a": -0.71,
+          "b": -1.6
+        }
+      },
+      "prompt": {
+        "color_name": "水晶黑 / Crystal Black",
+        "color_code": "B-102",
+        "color_value": "#37393B",
+        "lab_value": "Lab(L=24.2, a=-0.82, b=-1.89)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "黑色系，PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，水晶黑（Crystal Black），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #37393B，Lab 辅助参考 Lab(L=24.2, a=-0.82, b=-1.89)"
+      },
+      "tags": [
+        "PET",
+        "黑色系",
+        "水晶黑",
+        "Crystal Black"
+      ]
+    },
+    {
+      "id": "B-104",
+      "source_id": "NO.034",
+      "serial": "B-104",
+      "names": {
+        "zh": "冰川蓝",
+        "en": "Crystal Ice Blue",
+        "aliases": [
+          "B-104",
+          "冰川蓝",
+          "Crystal Ice Blue",
+          "crystaliceblue"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 80.36,
+          "a": -10.06,
+          "b": -7.11
+        },
+        "hex": "#ADCDD4",
+        "family": "蓝色系"
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/B-104-measurement-58.png",
+        "source_swatch_name": "B-104-measurement-58.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 58,
+        "measured_at": "2026-05-25",
+        "preview_lab": {
+          "L": 80.36,
+          "a": -10.06,
+          "b": -7.11
+        }
+      },
+      "prompt": {
+        "color_name": "冰川蓝 / Crystal Ice Blue",
+        "color_code": "B-104",
+        "color_value": "#ADCDD4",
+        "lab_value": "Lab(L=80.36, a=-10.06, b=-7.11)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "蓝色系，PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，冰川蓝（Crystal Ice Blue），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #ADCDD4，Lab 辅助参考 Lab(L=80.36, a=-10.06, b=-7.11)"
+      },
+      "tags": [
+        "PET",
+        "蓝色系",
+        "冰川蓝",
+        "Crystal Ice Blue"
+      ]
+    },
+    {
+      "id": "B-105",
+      "source_id": "NO.035",
+      "serial": "B-105",
+      "names": {
+        "zh": "迷雾蓝",
+        "en": "Fog Blue",
+        "aliases": [
+          "B-105",
+          "迷雾蓝",
+          "Fog Blue",
+          "fogblue"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 76.95,
+          "a": -2.09,
+          "b": -18.79
+        },
+        "hex": "#ABC0E1",
+        "family": "蓝色系"
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/B-105-measurement-59.png",
+        "source_swatch_name": "B-105-measurement-59.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 59,
+        "measured_at": "2026-05-25",
+        "preview_lab": {
+          "L": 76.95,
+          "a": -2.09,
+          "b": -18.79
+        }
+      },
+      "prompt": {
+        "color_name": "迷雾蓝 / Fog Blue",
+        "color_code": "B-105",
+        "color_value": "#ABC0E1",
+        "lab_value": "Lab(L=76.95, a=-2.09, b=-18.79)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "蓝色系，PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，迷雾蓝（Fog Blue），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #ABC0E1，Lab 辅助参考 Lab(L=76.95, a=-2.09, b=-18.79)"
+      },
+      "tags": [
+        "PET",
+        "蓝色系",
+        "迷雾蓝",
+        "Fog Blue"
+      ]
+    },
+    {
+      "id": "B-106",
+      "source_id": "NO.036",
+      "serial": "B-106",
+      "names": {
+        "zh": "天空蓝",
+        "en": "Sky Blue",
+        "aliases": [
+          "B-106",
+          "天空蓝",
+          "Sky Blue",
+          "skyblue"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 72.19,
+          "a": -23.31,
+          "b": -19.95
+        },
+        "hex": "#65BED5",
+        "family": null
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/B-106-measurement-60.png",
+        "source_swatch_name": "B-106-measurement-60.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 60,
+        "measured_at": "2026-05-26",
+        "preview_lab": {
+          "L": 72.19,
+          "a": -23.31,
+          "b": -19.95
+        }
+      },
+      "prompt": {
+        "color_name": "天空蓝 / Sky Blue",
+        "color_code": "B-106",
+        "color_value": "#65BED5",
+        "lab_value": "Lab(L=72.19, a=-23.31, b=-19.95)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，天空蓝（Sky Blue），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #65BED5，Lab 辅助参考 Lab(L=72.19, a=-23.31, b=-19.95)"
+      },
+      "tags": [
+        "PET",
+        "天空蓝",
+        "Sky Blue"
+      ]
+    },
+    {
+      "id": "B-107",
+      "source_id": "NO.037",
+      "serial": "B-107",
+      "names": {
+        "zh": "冰淇淋蓝",
+        "en": "Ice Cream Blue",
+        "aliases": [
+          "B-107",
+          "冰淇淋蓝",
+          "Ice Cream Blue",
+          "icecreamblue"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 58.72,
+          "a": -20.68,
+          "b": -34.35
+        },
+        "hex": "#1999C9",
+        "family": null
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/B-107-measurement-61.png",
+        "source_swatch_name": "B-107-measurement-61.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 61,
+        "measured_at": "2026-05-26",
+        "preview_lab": {
+          "L": 58.72,
+          "a": -20.68,
+          "b": -34.35
+        }
+      },
+      "prompt": {
+        "color_name": "冰淇淋蓝 / Ice Cream Blue",
+        "color_code": "B-107",
+        "color_value": "#1999C9",
+        "lab_value": "Lab(L=58.72, a=-20.68, b=-34.35)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，冰淇淋蓝（Ice Cream Blue），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #1999C9，Lab 辅助参考 Lab(L=58.72, a=-20.68, b=-34.35)"
+      },
+      "tags": [
+        "PET",
+        "冰淇淋蓝",
+        "Ice Cream Blue"
+      ]
+    },
+    {
+      "id": "B-109",
+      "source_id": "NO.038",
+      "serial": "B-109",
+      "names": {
+        "zh": "午夜蓝",
+        "en": "Midnight Blue",
+        "aliases": [
+          "B-109",
+          "午夜蓝",
+          "Midnight Blue",
+          "midnightblue"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 26.78,
+          "a": 0.09,
+          "b": -7.84
+        },
+        "hex": "#3B404B",
+        "family": null
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/B-109-measurement-62.png",
+        "source_swatch_name": "B-109-measurement-62.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 62,
+        "measured_at": "2026-05-26",
+        "preview_lab": {
+          "L": 26.78,
+          "a": 0.09,
+          "b": -7.84
+        }
+      },
+      "prompt": {
+        "color_name": "午夜蓝 / Midnight Blue",
+        "color_code": "B-109",
+        "color_value": "#3B404B",
+        "lab_value": "Lab(L=26.78, a=0.09, b=-7.84)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，午夜蓝（Midnight Blue），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #3B404B，Lab 辅助参考 Lab(L=26.78, a=0.09, b=-7.84)"
+      },
+      "tags": [
+        "PET",
+        "午夜蓝",
+        "Midnight Blue"
+      ]
+    },
+    {
+      "id": "B-110",
+      "source_id": "NO.039",
+      "serial": "B-110",
+      "names": {
+        "zh": "灰蒙绿",
+        "en": "Gray Green",
+        "aliases": [
+          "B-110",
+          "灰蒙绿",
+          "Gray Green",
+          "graygreen"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 76.23,
+          "a": -17.12,
+          "b": 15.96
+        },
+        "hex": "#A4C59E",
+        "family": null
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/B-110-measurement-63.png",
+        "source_swatch_name": "B-110-measurement-63.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 63,
+        "measured_at": "2026-05-26",
+        "preview_lab": {
+          "L": 76.23,
+          "a": -17.12,
+          "b": 15.96
+        }
+      },
+      "prompt": {
+        "color_name": "灰蒙绿 / Gray Green",
+        "color_code": "B-110",
+        "color_value": "#A4C59E",
+        "lab_value": "Lab(L=76.23, a=-17.12, b=15.96)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，灰蒙绿（Gray Green），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #A4C59E，Lab 辅助参考 Lab(L=76.23, a=-17.12, b=15.96)"
+      },
+      "tags": [
+        "PET",
+        "灰蒙绿",
+        "Gray Green"
+      ]
+    },
+    {
+      "id": "B-111",
+      "source_id": "NO.040",
+      "serial": "B-111",
+      "names": {
+        "zh": "卡其绿",
+        "en": "Khaki Green",
+        "aliases": [
+          "B-111",
+          "卡其绿",
+          "Khaki Green",
+          "khakigreen"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 61.71,
+          "a": -5.39,
+          "b": 9.09
+        },
+        "hex": "#909885",
+        "family": null
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/B-111-measurement-64.png",
+        "source_swatch_name": "B-111-measurement-64.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 64,
+        "measured_at": "2026-05-26",
+        "preview_lab": {
+          "L": 61.71,
+          "a": -5.39,
+          "b": 9.09
+        }
+      },
+      "prompt": {
+        "color_name": "卡其绿 / Khaki Green",
+        "color_code": "B-111",
+        "color_value": "#909885",
+        "lab_value": "Lab(L=61.71, a=-5.39, b=9.09)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，卡其绿（Khaki Green），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #909885，Lab 辅助参考 Lab(L=61.71, a=-5.39, b=9.09)"
+      },
+      "tags": [
+        "PET",
+        "卡其绿",
+        "Khaki Green"
+      ]
+    },
+    {
+      "id": "B-112",
+      "source_id": "NO.041",
+      "serial": "B-112",
+      "names": {
+        "zh": "爱尔兰绿",
+        "en": "Irish Green",
+        "aliases": [
+          "B-112",
+          "爱尔兰绿",
+          "Irish Green",
+          "irishgreen"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 31.83,
+          "a": -16.3,
+          "b": 5.75
+        },
+        "hex": "#305241",
+        "family": null
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/B-112-measurement-65.png",
+        "source_swatch_name": "B-112-measurement-65.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 65,
+        "measured_at": "2026-05-26",
+        "preview_lab": {
+          "L": 31.83,
+          "a": -16.3,
+          "b": 5.75
+        }
+      },
+      "prompt": {
+        "color_name": "爱尔兰绿 / Irish Green",
+        "color_code": "B-112",
+        "color_value": "#305241",
+        "lab_value": "Lab(L=31.83, a=-16.3, b=5.75)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，爱尔兰绿（Irish Green），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #305241，Lab 辅助参考 Lab(L=31.83, a=-16.3, b=5.75)"
+      },
+      "tags": [
+        "PET",
+        "爱尔兰绿",
+        "Irish Green"
+      ]
+    },
+    {
+      "id": "B-113",
+      "source_id": "NO.042",
+      "serial": "B-113",
+      "names": {
+        "zh": "苹果绿",
+        "en": "Apple Green",
+        "aliases": [
+          "B-113",
+          "苹果绿",
+          "Apple Green",
+          "applegreen"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 77.6,
+          "a": -29.17,
+          "b": 57.01
+        },
+        "hex": "#A2CE4D",
+        "family": null
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/B-113-measurement-66.png",
+        "source_swatch_name": "B-113-measurement-66.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 66,
+        "measured_at": "2026-05-26",
+        "preview_lab": {
+          "L": 77.6,
+          "a": -29.17,
+          "b": 57.01
+        }
+      },
+      "prompt": {
+        "color_name": "苹果绿 / Apple Green",
+        "color_code": "B-113",
+        "color_value": "#A2CE4D",
+        "lab_value": "Lab(L=77.6, a=-29.17, b=57.01)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，苹果绿（Apple Green），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #A2CE4D，Lab 辅助参考 Lab(L=77.6, a=-29.17, b=57.01)"
+      },
+      "tags": [
+        "PET",
+        "苹果绿",
+        "Apple Green"
+      ]
+    },
+    {
+      "id": "B-114",
+      "source_id": "NO.043",
+      "serial": "B-114",
+      "names": {
+        "zh": "装甲绿",
+        "en": "Armor Green",
+        "aliases": [
+          "B-114",
+          "装甲绿",
+          "Armor Green",
+          "armorgreen"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 47.47,
+          "a": -1.4,
+          "b": 5.49
+        },
+        "hex": "#717167",
+        "family": null
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/B-114-measurement-67.png",
+        "source_swatch_name": "B-114-measurement-67.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 67,
+        "measured_at": "2026-05-26",
+        "preview_lab": {
+          "L": 47.47,
+          "a": -1.4,
+          "b": 5.49
+        }
+      },
+      "prompt": {
+        "color_name": "装甲绿 / Armor Green",
+        "color_code": "B-114",
+        "color_value": "#717167",
+        "lab_value": "Lab(L=47.47, a=-1.4, b=5.49)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，装甲绿（Armor Green），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #717167，Lab 辅助参考 Lab(L=47.47, a=-1.4, b=5.49)"
+      },
+      "tags": [
+        "PET",
+        "装甲绿",
+        "Armor Green"
+      ]
+    },
+    {
+      "id": "B-117",
+      "source_id": "NO.044",
+      "serial": "B-117",
+      "names": {
+        "zh": "柠檬黄",
+        "en": "Lemon Yellow",
+        "aliases": [
+          "B-117",
+          "柠檬黄",
+          "Lemon Yellow",
+          "lemonyellow"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 87.17,
+          "a": -7.5,
+          "b": 67.92
+        },
+        "hex": "#E5D94D",
+        "family": "黄色系"
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/B-117-measurement-21.png",
+        "source_swatch_name": "B-117-measurement-21.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 21,
+        "measured_at": "2026-05-19",
+        "preview_lab": {
+          "L": 85.84,
+          "a": -7.39,
+          "b": 67.02
+        }
+      },
+      "prompt": {
+        "color_name": "柠檬黄 / Lemon Yellow",
+        "color_code": "B-117",
+        "color_value": "#E5D94D",
+        "lab_value": "Lab(L=87.17, a=-7.5, b=67.92)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "黄色系，PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，柠檬黄（Lemon Yellow），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #E5D94D，Lab 辅助参考 Lab(L=87.17, a=-7.5, b=67.92)"
+      },
+      "tags": [
+        "PET",
+        "黄色系",
+        "柠檬黄",
+        "Lemon Yellow"
+      ]
+    },
+    {
+      "id": "B-118",
+      "source_id": "NO.045",
+      "serial": "B-118",
+      "names": {
+        "zh": "葵花黄",
+        "en": "Sunflower Yellow",
+        "aliases": [
+          "B-118",
+          "葵花黄",
+          "Sunflower Yellow",
+          "sunfloweryellow"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 75.06,
+          "a": 15.07,
+          "b": 64.02
+        },
+        "hex": "#E4A73A",
+        "family": "黄色系"
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/B-118-measurement-22.png",
+        "source_swatch_name": "B-118-measurement-22.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 22,
+        "measured_at": "2026-05-19",
+        "preview_lab": {
+          "L": 72.97,
+          "a": 16.09,
+          "b": 62.11
+        }
+      },
+      "prompt": {
+        "color_name": "葵花黄 / Sunflower Yellow",
+        "color_code": "B-118",
+        "color_value": "#E4A73A",
+        "lab_value": "Lab(L=75.06, a=15.07, b=64.02)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "黄色系，PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，葵花黄（Sunflower Yellow），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #E4A73A，Lab 辅助参考 Lab(L=75.06, a=15.07, b=64.02)"
+      },
+      "tags": [
+        "PET",
+        "黄色系",
+        "葵花黄",
+        "Sunflower Yellow"
+      ]
+    },
+    {
+      "id": "B-120",
+      "source_id": "NO.046",
+      "serial": "B-120",
+      "names": {
+        "zh": "玉米黄",
+        "en": "Corn Yellow",
+        "aliases": [
+          "B-120",
+          "玉米黄",
+          "Corn Yellow",
+          "cornyellow"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 82.14,
+          "a": 2.25,
+          "b": 69.57
+        },
+        "hex": "#E9C63B",
+        "family": "黄色系"
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/B-120-measurement-23.png",
+        "source_swatch_name": "B-120-measurement-23.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 23,
+        "measured_at": "2026-05-19",
+        "preview_lab": {
+          "L": 81.33,
+          "a": 2.61,
+          "b": 69.76
+        }
+      },
+      "prompt": {
+        "color_name": "玉米黄 / Corn Yellow",
+        "color_code": "B-120",
+        "color_value": "#E9C63B",
+        "lab_value": "Lab(L=82.14, a=2.25, b=69.57)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "黄色系，PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，玉米黄（Corn Yellow），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #E9C63B，Lab 辅助参考 Lab(L=82.14, a=2.25, b=69.57)"
+      },
+      "tags": [
+        "PET",
+        "黄色系",
+        "玉米黄",
+        "Corn Yellow"
+      ]
+    },
+    {
+      "id": "B-121",
+      "source_id": "NO.047",
+      "serial": "B-121",
+      "names": {
+        "zh": "沙丘黄",
+        "en": "Sand Dune Yellow",
+        "aliases": [
+          "B-121",
+          "沙丘黄",
+          "Sand Dune Yellow",
+          "sandduneyellow"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 80.33,
+          "a": 10.21,
+          "b": 23.84
+        },
+        "hex": "#EBC6A0",
+        "family": "黄色系"
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/B-121-measurement-24.png",
+        "source_swatch_name": "B-121-measurement-24.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 24,
+        "measured_at": "2026-05-19",
+        "preview_lab": {
+          "L": 82.54,
+          "a": 9.47,
+          "b": 24.24
+        }
+      },
+      "prompt": {
+        "color_name": "沙丘黄 / Sand Dune Yellow",
+        "color_code": "B-121",
+        "color_value": "#EBC6A0",
+        "lab_value": "Lab(L=80.33, a=10.21, b=23.84)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "黄色系，PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，沙丘黄（Sand Dune Yellow），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #EBC6A0，Lab 辅助参考 Lab(L=80.33, a=10.21, b=23.84)"
+      },
+      "tags": [
+        "PET",
+        "黄色系",
+        "沙丘黄",
+        "Sand Dune Yellow"
+      ]
+    },
+    {
+      "id": "B-122",
+      "source_id": "NO.048",
+      "serial": "B-122",
+      "names": {
+        "zh": "卡其米兰",
+        "en": "Khaki Milan",
+        "aliases": [
+          "B-122",
+          "卡其米兰",
+          "Khaki Milan",
+          "khakimilan"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 75.52,
+          "a": 3.64,
+          "b": 12.13
+        },
+        "hex": "#C8B7A4",
+        "family": "黄色系"
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/B-122-measurement-68.png",
+        "source_swatch_name": "B-122-measurement-68.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 68,
+        "measured_at": "2026-05-26",
+        "preview_lab": {
+          "L": 75.52,
+          "a": 3.64,
+          "b": 12.13
+        }
+      },
+      "prompt": {
+        "color_name": "卡其米兰 / Khaki Milan",
+        "color_code": "B-122",
+        "color_value": "#C8B7A4",
+        "lab_value": "Lab(L=75.52, a=3.64, b=12.13)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "黄色系，PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，卡其米兰（Khaki Milan），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #C8B7A4，Lab 辅助参考 Lab(L=75.52, a=3.64, b=12.13)"
+      },
+      "tags": [
+        "PET",
+        "黄色系",
+        "卡其米兰",
+        "Khaki Milan"
+      ]
+    },
+    {
+      "id": "B-123",
+      "source_id": "NO.049",
+      "serial": "B-123",
+      "names": {
+        "zh": "水晶奶咖",
+        "en": "Crystal Milk Coffe",
+        "aliases": [
+          "B-123",
+          "水晶奶咖",
+          "Crystal Milk Coffe",
+          "crystalmilkcoffe"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 67.3,
+          "a": 6.81,
+          "b": 11.9
+        },
+        "hex": "#B69F8F",
+        "family": null
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/B-123-measurement-69.png",
+        "source_swatch_name": "B-123-measurement-69.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 69,
+        "measured_at": "2026-05-26",
+        "preview_lab": {
+          "L": 67.3,
+          "a": 6.81,
+          "b": 11.9
+        }
+      },
+      "prompt": {
+        "color_name": "水晶奶咖 / Crystal Milk Coffe",
+        "color_code": "B-123",
+        "color_value": "#B69F8F",
+        "lab_value": "Lab(L=67.3, a=6.81, b=11.9)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，水晶奶咖（Crystal Milk Coffe），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #B69F8F，Lab 辅助参考 Lab(L=67.3, a=6.81, b=11.9)"
+      },
+      "tags": [
+        "PET",
+        "水晶奶咖",
+        "Crystal Milk Coffe"
+      ]
+    },
+    {
+      "id": "B-124",
+      "source_id": "NO.050",
+      "serial": "B-124",
+      "names": {
+        "zh": "纳多灰浅",
+        "en": "Light Naduo Gray",
+        "aliases": [
+          "B-124",
+          "纳多灰浅",
+          "Light Naduo Gray",
+          "lightnaduogray"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 64.79,
+          "a": 0.66,
+          "b": -2.75
+        },
+        "hex": "#9D9DA2",
+        "family": null
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/B-124-measurement-70.png",
+        "source_swatch_name": "B-124-measurement-70.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 70,
+        "measured_at": "2026-05-26",
+        "preview_lab": {
+          "L": 64.79,
+          "a": 0.66,
+          "b": -2.75
+        }
+      },
+      "prompt": {
+        "color_name": "纳多灰浅 / Light Naduo Gray",
+        "color_code": "B-124",
+        "color_value": "#9D9DA2",
+        "lab_value": "Lab(L=64.79, a=0.66, b=-2.75)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，纳多灰浅（Light Naduo Gray），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #9D9DA2，Lab 辅助参考 Lab(L=64.79, a=0.66, b=-2.75)"
+      },
+      "tags": [
+        "PET",
+        "纳多灰浅",
+        "Light Naduo Gray"
+      ]
+    },
+    {
+      "id": "B-125",
+      "source_id": "NO.051",
+      "serial": "B-125",
+      "names": {
+        "zh": "火山灰",
+        "en": "Volcanic Gray",
+        "aliases": [
+          "B-125",
+          "火山灰",
+          "Volcanic Gray",
+          "volcanicgray"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 69.79,
+          "a": -0.4,
+          "b": 1.7
+        },
+        "hex": "#ABABA7",
+        "family": null
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/B-125-measurement-71.png",
+        "source_swatch_name": "B-125-measurement-71.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 71,
+        "measured_at": "2026-05-26",
+        "preview_lab": {
+          "L": 69.79,
+          "a": -0.4,
+          "b": 1.7
+        }
+      },
+      "prompt": {
+        "color_name": "火山灰 / Volcanic Gray",
+        "color_code": "B-125",
+        "color_value": "#ABABA7",
+        "lab_value": "Lab(L=69.79, a=-0.4, b=1.7)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，火山灰（Volcanic Gray），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #ABABA7，Lab 辅助参考 Lab(L=69.79, a=-0.4, b=1.7)"
+      },
+      "tags": [
+        "PET",
+        "火山灰",
+        "Volcanic Gray"
+      ]
+    },
+    {
+      "id": "B-126",
+      "source_id": "NO.052",
+      "serial": "B-126",
+      "names": {
+        "zh": "水泥灰",
+        "en": "Cement Gray",
+        "aliases": [
+          "B-126",
+          "水泥灰",
+          "Cement Gray",
+          "cementgray"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 41.9,
+          "a": -0.62,
+          "b": -7.81
+        },
+        "hex": "#5D6370",
+        "family": null
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/B-126-measurement-72.png",
+        "source_swatch_name": "B-126-measurement-72.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 72,
+        "measured_at": "2026-05-26",
+        "preview_lab": {
+          "L": 41.9,
+          "a": -0.62,
+          "b": -7.81
+        }
+      },
+      "prompt": {
+        "color_name": "水泥灰 / Cement Gray",
+        "color_code": "B-126",
+        "color_value": "#5D6370",
+        "lab_value": "Lab(L=41.9, a=-0.62, b=-7.81)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，水泥灰（Cement Gray），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #5D6370，Lab 辅助参考 Lab(L=41.9, a=-0.62, b=-7.81)"
+      },
+      "tags": [
+        "PET",
+        "水泥灰",
+        "Cement Gray"
+      ]
+    },
+    {
+      "id": "B-127",
+      "source_id": "NO.053",
+      "serial": "B-127",
+      "names": {
+        "zh": "胭脂红",
+        "en": "Blush Red",
+        "aliases": [
+          "B-127",
+          "胭脂红",
+          "Blush Red",
+          "blushred"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 37.1,
+          "a": 38.38,
+          "b": 12.81
+        },
+        "hex": "#913945",
+        "family": null
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/B-127-measurement-73.png",
+        "source_swatch_name": "B-127-measurement-73.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 73,
+        "measured_at": "2026-05-26",
+        "preview_lab": {
+          "L": 37.1,
+          "a": 38.38,
+          "b": 12.81
+        }
+      },
+      "prompt": {
+        "color_name": "胭脂红 / Blush Red",
+        "color_code": "B-127",
+        "color_value": "#913945",
+        "lab_value": "Lab(L=37.1, a=38.38, b=12.81)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，胭脂红（Blush Red），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #913945，Lab 辅助参考 Lab(L=37.1, a=38.38, b=12.81)"
+      },
+      "tags": [
+        "PET",
+        "胭脂红",
+        "Blush Red"
+      ]
+    },
+    {
+      "id": "B-128",
+      "source_id": "NO.054",
+      "serial": "B-128",
+      "names": {
+        "zh": "蒂芙尼",
+        "en": "Tiffany",
+        "aliases": [
+          "B-128",
+          "蒂芙尼",
+          "Tiffany",
+          "tiffany"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 77.55,
+          "a": -31.41,
+          "b": -0.06
+        },
+        "hex": "#76D0BE",
+        "family": null
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/B-128-measurement-74.png",
+        "source_swatch_name": "B-128-measurement-74.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 74,
+        "measured_at": "2026-05-26",
+        "preview_lab": {
+          "L": 77.55,
+          "a": -31.41,
+          "b": -0.06
+        }
+      },
+      "prompt": {
+        "color_name": "蒂芙尼 / Tiffany",
+        "color_code": "B-128",
+        "color_value": "#76D0BE",
+        "lab_value": "Lab(L=77.55, a=-31.41, b=-0.06)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，蒂芙尼（Tiffany），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #76D0BE，Lab 辅助参考 Lab(L=77.55, a=-31.41, b=-0.06)"
+      },
+      "tags": [
+        "PET",
+        "蒂芙尼",
+        "Tiffany"
+      ]
+    },
+    {
+      "id": "B-129",
+      "source_id": "NO.055",
+      "serial": "B-129",
+      "names": {
+        "zh": "薰衣草紫",
+        "en": "Lanvender Purple",
+        "aliases": [
+          "B-129",
+          "薰衣草紫",
+          "Lanvender Purple",
+          "lanvenderpurple"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 58.27,
+          "a": 16.85,
+          "b": -31.89
+        },
+        "hex": "#9383C4",
+        "family": null
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/B-129-measurement-75.png",
+        "source_swatch_name": "B-129-measurement-75.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 75,
+        "measured_at": "2026-05-26",
+        "preview_lab": {
+          "L": 58.27,
+          "a": 16.85,
+          "b": -31.89
+        }
+      },
+      "prompt": {
+        "color_name": "薰衣草紫 / Lanvender Purple",
+        "color_code": "B-129",
+        "color_value": "#9383C4",
+        "lab_value": "Lab(L=58.27, a=16.85, b=-31.89)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，薰衣草紫（Lanvender Purple），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #9383C4，Lab 辅助参考 Lab(L=58.27, a=16.85, b=-31.89)"
+      },
+      "tags": [
+        "PET",
+        "薰衣草紫",
+        "Lanvender Purple"
+      ]
+    },
+    {
+      "id": "B-130",
+      "source_id": "NO.056",
+      "serial": "B-130",
+      "names": {
+        "zh": "浪漫粉",
+        "en": "Romantic Pink",
+        "aliases": [
+          "B-130",
+          "浪漫粉",
+          "Romantic Pink",
+          "romanticpink"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 66.69,
+          "a": 39.61,
+          "b": 1.04
+        },
+        "hex": "#E485A2",
+        "family": null
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/B-130-measurement-76.png",
+        "source_swatch_name": "B-130-measurement-76.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 76,
+        "measured_at": "2026-05-26",
+        "preview_lab": {
+          "L": 66.69,
+          "a": 39.61,
+          "b": 1.04
+        }
+      },
+      "prompt": {
+        "color_name": "浪漫粉 / Romantic Pink",
+        "color_code": "B-130",
+        "color_value": "#E485A2",
+        "lab_value": "Lab(L=66.69, a=39.61, b=1.04)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，浪漫粉（Romantic Pink），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #E485A2，Lab 辅助参考 Lab(L=66.69, a=39.61, b=1.04)"
+      },
+      "tags": [
+        "PET",
+        "浪漫粉",
+        "Romantic Pink"
+      ]
+    },
+    {
+      "id": "B-131",
+      "source_id": "NO.057",
+      "serial": "B-131",
+      "names": {
+        "zh": "胭脂粉",
+        "en": "Blush Pink",
+        "aliases": [
+          "B-131",
+          "胭脂粉",
+          "Blush Pink",
+          "blushpink"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 75.6,
+          "a": 23.41,
+          "b": 3.63
+        },
+        "hex": "#E5AAB5",
+        "family": null
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/B-131-measurement-77.png",
+        "source_swatch_name": "B-131-measurement-77.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 77,
+        "measured_at": "2026-05-26",
+        "preview_lab": {
+          "L": 75.6,
+          "a": 23.41,
+          "b": 3.63
+        }
+      },
+      "prompt": {
+        "color_name": "胭脂粉 / Blush Pink",
+        "color_code": "B-131",
+        "color_value": "#E5AAB5",
+        "lab_value": "Lab(L=75.6, a=23.41, b=3.63)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，胭脂粉（Blush Pink），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #E5AAB5，Lab 辅助参考 Lab(L=75.6, a=23.41, b=3.63)"
+      },
+      "tags": [
+        "PET",
+        "胭脂粉",
+        "Blush Pink"
+      ]
+    },
+    {
+      "id": "B-132",
+      "source_id": "NO.058",
+      "serial": "B-132",
+      "names": {
+        "zh": "水晶橙",
+        "en": "Crystal Orange",
+        "aliases": [
+          "B-132",
+          "水晶橙",
+          "Crystal Orange",
+          "crystalorange"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 57.95,
+          "a": 47.74,
+          "b": 42.09
+        },
+        "hex": "#DF6444",
+        "family": null
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/B-132-measurement-78.png",
+        "source_swatch_name": "B-132-measurement-78.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 78,
+        "measured_at": "2026-05-26",
+        "preview_lab": {
+          "L": 57.95,
+          "a": 47.74,
+          "b": 42.09
+        }
+      },
+      "prompt": {
+        "color_name": "水晶橙 / Crystal Orange",
+        "color_code": "B-132",
+        "color_value": "#DF6444",
+        "lab_value": "Lab(L=57.95, a=47.74, b=42.09)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，水晶橙（Crystal Orange），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #DF6444，Lab 辅助参考 Lab(L=57.95, a=47.74, b=42.09)"
+      },
+      "tags": [
+        "PET",
+        "水晶橙",
+        "Crystal Orange"
+      ]
+    },
+    {
+      "id": "C-201",
+      "source_id": "NO.059",
+      "serial": "C-201",
+      "names": {
+        "zh": "金属白",
+        "en": "Metallic White",
+        "aliases": [
+          "C-201",
+          "金属白",
+          "Metallic White",
+          "metallicwhite"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 89.83,
+          "a": -1.36,
+          "b": -0.94
+        },
+        "hex": "#DEE3E4",
+        "family": null
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/C-201-measurement-79.png",
+        "source_swatch_name": "C-201-measurement-79.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 79,
+        "measured_at": "2026-05-26",
+        "preview_lab": {
+          "L": 89.83,
+          "a": -1.36,
+          "b": -0.94
+        }
+      },
+      "prompt": {
+        "color_name": "金属白 / Metallic White",
+        "color_code": "C-201",
+        "color_value": "#DEE3E4",
+        "lab_value": "Lab(L=89.83, a=-1.36, b=-0.94)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，金属白（Metallic White），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #DEE3E4，Lab 辅助参考 Lab(L=89.83, a=-1.36, b=-0.94)"
+      },
+      "tags": [
+        "PET",
+        "金属白",
+        "Metallic White"
+      ]
+    },
+    {
+      "id": "C-202",
+      "source_id": "NO.060",
+      "serial": "C-202",
+      "names": {
+        "zh": "金属黑",
+        "en": "Metallic Black",
+        "aliases": [
+          "C-202",
+          "金属黑",
+          "Metallic Black",
+          "metallicblack"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 28.27,
+          "a": -0.51,
+          "b": -0.18
+        },
+        "hex": "#424343",
+        "family": null
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/C-202-measurement-80.png",
+        "source_swatch_name": "C-202-measurement-80.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 80,
+        "measured_at": "2026-05-26",
+        "preview_lab": {
+          "L": 28.27,
+          "a": -0.51,
+          "b": -0.18
+        }
+      },
+      "prompt": {
+        "color_name": "金属黑 / Metallic Black",
+        "color_code": "C-202",
+        "color_value": "#424343",
+        "lab_value": "Lab(L=28.27, a=-0.51, b=-0.18)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，金属黑（Metallic Black），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #424343，Lab 辅助参考 Lab(L=28.27, a=-0.51, b=-0.18)"
+      },
+      "tags": [
+        "PET",
+        "金属黑",
+        "Metallic Black"
+      ]
+    },
+    {
+      "id": "C-203",
+      "source_id": "NO.061",
+      "serial": "C-203",
+      "names": {
+        "zh": "金属银",
+        "en": "Metallic Silver",
+        "aliases": [
+          "C-203",
+          "金属银",
+          "Metallic Silver",
+          "metallicsilver"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 85.47,
+          "a": -0.31,
+          "b": 0.44
+        },
+        "hex": "#D5D6D5",
+        "family": null
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/C-203-measurement-81.png",
+        "source_swatch_name": "C-203-measurement-81.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 81,
+        "measured_at": "2026-05-26",
+        "preview_lab": {
+          "L": 85.47,
+          "a": -0.31,
+          "b": 0.44
+        }
+      },
+      "prompt": {
+        "color_name": "金属银 / Metallic Silver",
+        "color_code": "C-203",
+        "color_value": "#D5D6D5",
+        "lab_value": "Lab(L=85.47, a=-0.31, b=0.44)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，金属银（Metallic Silver），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #D5D6D5，Lab 辅助参考 Lab(L=85.47, a=-0.31, b=0.44)"
+      },
+      "tags": [
+        "PET",
+        "金属银",
+        "Metallic Silver"
+      ]
+    },
+    {
+      "id": "C-204",
+      "source_id": "NO.062",
+      "serial": "C-204",
+      "names": {
+        "zh": "金属黄",
+        "en": "Metallic Yellow",
+        "aliases": [
+          "C-204",
+          "金属黄",
+          "Metallic Yellow",
+          "metallicyellow"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 76.65,
+          "a": 16.43,
+          "b": 71.84
+        },
+        "hex": "#F1B028",
+        "family": null
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/C-204-measurement-82.png",
+        "source_swatch_name": "C-204-measurement-82.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 82,
+        "measured_at": "2026-05-26",
+        "preview_lab": {
+          "L": 76.65,
+          "a": 16.43,
+          "b": 71.84
+        }
+      },
+      "prompt": {
+        "color_name": "金属黄 / Metallic Yellow",
+        "color_code": "C-204",
+        "color_value": "#F1B028",
+        "lab_value": "Lab(L=76.65, a=16.43, b=71.84)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，金属黄（Metallic Yellow），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #F1B028，Lab 辅助参考 Lab(L=76.65, a=16.43, b=71.84)"
+      },
+      "tags": [
+        "PET",
+        "金属黄",
+        "Metallic Yellow"
+      ]
+    },
+    {
+      "id": "C-205",
+      "source_id": "NO.063",
+      "serial": "C-205",
+      "names": {
+        "zh": "金属橙",
+        "en": "Metallic Orange",
+        "aliases": [
+          "C-205",
+          "金属橙",
+          "Metallic Orange",
+          "metallicorange"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 49.01,
+          "a": 44.01,
+          "b": 28.91
+        },
+        "hex": "#BD5146",
+        "family": null
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/C-205-measurement-83.png",
+        "source_swatch_name": "C-205-measurement-83.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 83,
+        "measured_at": "2026-05-26",
+        "preview_lab": {
+          "L": 49.01,
+          "a": 44.01,
+          "b": 28.91
+        }
+      },
+      "prompt": {
+        "color_name": "金属橙 / Metallic Orange",
+        "color_code": "C-205",
+        "color_value": "#BD5146",
+        "lab_value": "Lab(L=49.01, a=44.01, b=28.91)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，金属橙（Metallic Orange），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #BD5146，Lab 辅助参考 Lab(L=49.01, a=44.01, b=28.91)"
+      },
+      "tags": [
+        "PET",
+        "金属橙",
+        "Metallic Orange"
+      ]
+    },
+    {
+      "id": "C-206",
+      "source_id": "NO.064",
+      "serial": "C-206",
+      "names": {
+        "zh": "金属祖母绿",
+        "en": "Metallic Emerald",
+        "aliases": [
+          "C-206",
+          "金属祖母绿",
+          "Metallic Emerald",
+          "metallicemerald"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 57.15,
+          "a": -38.09,
+          "b": 7.28
+        },
+        "hex": "#2B9B7B",
+        "family": null
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/C-206-measurement-84.png",
+        "source_swatch_name": "C-206-measurement-84.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 84,
+        "measured_at": "2026-05-26",
+        "preview_lab": {
+          "L": 57.15,
+          "a": -38.09,
+          "b": 7.28
+        }
+      },
+      "prompt": {
+        "color_name": "金属祖母绿 / Metallic Emerald",
+        "color_code": "C-206",
+        "color_value": "#2B9B7B",
+        "lab_value": "Lab(L=57.15, a=-38.09, b=7.28)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，金属祖母绿（Metallic Emerald），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #2B9B7B，Lab 辅助参考 Lab(L=57.15, a=-38.09, b=7.28)"
+      },
+      "tags": [
+        "PET",
+        "金属祖母绿",
+        "Metallic Emerald"
+      ]
+    },
+    {
+      "id": "C-207",
+      "source_id": "NO.065",
+      "serial": "C-207",
+      "names": {
+        "zh": "超亮青雾蓝",
+        "en": "Ultra Bright Clear Mist Blue",
+        "aliases": [
+          "C-207",
+          "超亮青雾蓝",
+          "Ultra Bright Clear Mist Blue",
+          "ultrabrightclearmistblue"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 72.04,
+          "a": -4.65,
+          "b": -17.39
+        },
+        "hex": "#9AB4D0",
+        "family": null
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/C-207-measurement-85.png",
+        "source_swatch_name": "C-207-measurement-85.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 85,
+        "measured_at": "2026-05-26",
+        "preview_lab": {
+          "L": 72.04,
+          "a": -4.65,
+          "b": -17.39
+        }
+      },
+      "prompt": {
+        "color_name": "超亮青雾蓝 / Ultra Bright Clear Mist Blue",
+        "color_code": "C-207",
+        "color_value": "#9AB4D0",
+        "lab_value": "Lab(L=72.04, a=-4.65, b=-17.39)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，超亮青雾蓝（Ultra Bright Clear Mist Blue），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #9AB4D0，Lab 辅助参考 Lab(L=72.04, a=-4.65, b=-17.39)"
+      },
+      "tags": [
+        "PET",
+        "超亮青雾蓝",
+        "Ultra Bright Clear Mist Blue"
+      ]
+    },
+    {
+      "id": "C-208",
+      "source_id": "NO.066",
+      "serial": "C-208",
+      "names": {
+        "zh": "金属葡萄紫",
+        "en": "Metallic Grapes Purple",
+        "aliases": [
+          "C-208",
+          "金属葡萄紫",
+          "Metallic Grapes Purple",
+          "metallicgrapespurple"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 32.09,
+          "a": 27.83,
+          "b": -30.73
+        },
+        "hex": "#633B7D",
+        "family": null
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/C-208-measurement-86.png",
+        "source_swatch_name": "C-208-measurement-86.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 86,
+        "measured_at": "2026-05-26",
+        "preview_lab": {
+          "L": 32.09,
+          "a": 27.83,
+          "b": -30.73
+        }
+      },
+      "prompt": {
+        "color_name": "金属葡萄紫 / Metallic Grapes Purple",
+        "color_code": "C-208",
+        "color_value": "#633B7D",
+        "lab_value": "Lab(L=32.09, a=27.83, b=-30.73)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，金属葡萄紫（Metallic Grapes Purple），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #633B7D，Lab 辅助参考 Lab(L=32.09, a=27.83, b=-30.73)"
+      },
+      "tags": [
+        "PET",
+        "金属葡萄紫",
+        "Metallic Grapes Purple"
+      ]
+    },
+    {
+      "id": "C-209",
+      "source_id": "NO.067",
+      "serial": "C-209",
+      "names": {
+        "zh": "金属深遂灰",
+        "en": "Metallic Deep Grey",
+        "aliases": [
+          "C-209",
+          "金属深遂灰",
+          "Metallic Deep Grey",
+          "metallicdeepgrey"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 44.62,
+          "a": -0.44,
+          "b": -3.82
+        },
+        "hex": "#666A70",
+        "family": null
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/C-209-measurement-87.png",
+        "source_swatch_name": "C-209-measurement-87.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 87,
+        "measured_at": "2026-05-26",
+        "preview_lab": {
+          "L": 44.62,
+          "a": -0.44,
+          "b": -3.82
+        }
+      },
+      "prompt": {
+        "color_name": "金属深遂灰 / Metallic Deep Grey",
+        "color_code": "C-209",
+        "color_value": "#666A70",
+        "lab_value": "Lab(L=44.62, a=-0.44, b=-3.82)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，金属深遂灰（Metallic Deep Grey），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #666A70，Lab 辅助参考 Lab(L=44.62, a=-0.44, b=-3.82)"
+      },
+      "tags": [
+        "PET",
+        "金属深遂灰",
+        "Metallic Deep Grey"
+      ]
+    },
+    {
+      "id": "C-210",
+      "source_id": "NO.068",
+      "serial": "C-210",
+      "names": {
+        "zh": "金属钛钢灰",
+        "en": "Metallic Titanium Steel Grey",
+        "aliases": [
+          "C-210",
+          "金属钛钢灰",
+          "Metallic Titanium Steel Grey",
+          "metallictitaniumsteelgrey"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 64.0,
+          "a": -0.08,
+          "b": -3.43
+        },
+        "hex": "#999BA1",
+        "family": null
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/C-210-measurement-88.png",
+        "source_swatch_name": "C-210-measurement-88.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 88,
+        "measured_at": "2026-05-26",
+        "preview_lab": {
+          "L": 64.0,
+          "a": -0.08,
+          "b": -3.43
+        }
+      },
+      "prompt": {
+        "color_name": "金属钛钢灰 / Metallic Titanium Steel Grey",
+        "color_code": "C-210",
+        "color_value": "#999BA1",
+        "lab_value": "Lab(L=64.0, a=-0.08, b=-3.43)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，金属钛钢灰（Metallic Titanium Steel Grey），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #999BA1，Lab 辅助参考 Lab(L=64.0, a=-0.08, b=-3.43)"
+      },
+      "tags": [
+        "PET",
+        "金属钛钢灰",
+        "Metallic Titanium Steel Grey"
+      ]
+    },
+    {
+      "id": "C-212",
+      "source_id": "NO.069",
+      "serial": "C-212",
+      "names": {
+        "zh": "金属战斗灰",
+        "en": "Metallic Combat Grey",
+        "aliases": [
+          "C-212",
+          "金属战斗灰",
+          "Metallic Combat Grey",
+          "metalliccombatgrey"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 68.64,
+          "a": 1.43,
+          "b": -0.9
+        },
+        "hex": "#AAA7A9",
+        "family": null
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/C-212-measurement-89.png",
+        "source_swatch_name": "C-212-measurement-89.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 89,
+        "measured_at": "2026-05-26",
+        "preview_lab": {
+          "L": 68.64,
+          "a": 1.43,
+          "b": -0.9
+        }
+      },
+      "prompt": {
+        "color_name": "金属战斗灰 / Metallic Combat Grey",
+        "color_code": "C-212",
+        "color_value": "#AAA7A9",
+        "lab_value": "Lab(L=68.64, a=1.43, b=-0.9)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，金属战斗灰（Metallic Combat Grey），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #AAA7A9，Lab 辅助参考 Lab(L=68.64, a=1.43, b=-0.9)"
+      },
+      "tags": [
+        "PET",
+        "金属战斗灰",
+        "Metallic Combat Grey"
+      ]
+    },
+    {
+      "id": "C-213",
+      "source_id": "NO.070",
+      "serial": "C-213",
+      "names": {
+        "zh": "金属银河蓝",
+        "en": "Metallic Milky Way's Blue",
+        "aliases": [
+          "C-213",
+          "金属银河蓝",
+          "Metallic Milky Way's Blue",
+          "metallicmilkywaysblue"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 36.43,
+          "a": -0.11,
+          "b": -15.68
+        },
+        "hex": "#4A566F",
+        "family": null
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/C-213-measurement-90.png",
+        "source_swatch_name": "C-213-measurement-90.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 90,
+        "measured_at": "2026-05-26",
+        "preview_lab": {
+          "L": 36.43,
+          "a": -0.11,
+          "b": -15.68
+        }
+      },
+      "prompt": {
+        "color_name": "金属银河蓝 / Metallic Milky Way's Blue",
+        "color_code": "C-213",
+        "color_value": "#4A566F",
+        "lab_value": "Lab(L=36.43, a=-0.11, b=-15.68)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，金属银河蓝（Metallic Milky Way's Blue），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #4A566F，Lab 辅助参考 Lab(L=36.43, a=-0.11, b=-15.68)"
+      },
+      "tags": [
+        "PET",
+        "金属银河蓝",
+        "Metallic Milky Way's Blue"
+      ]
+    },
+    {
+      "id": "C-215",
+      "source_id": "NO.071",
+      "serial": "C-215",
+      "names": {
+        "zh": "金属香槟金浅",
+        "en": "Metallic Champagne Light Gold",
+        "aliases": [
+          "C-215",
+          "金属香槟金浅",
+          "Metallic Champagne Light Gold",
+          "metallicchampagnelightgold"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 83.18,
+          "a": 0.03,
+          "b": 2.84
+        },
+        "hex": "#D1CFCA",
+        "family": null
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/C-215-measurement-91.png",
+        "source_swatch_name": "C-215-measurement-91.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 91,
+        "measured_at": "2026-05-26",
+        "preview_lab": {
+          "L": 83.18,
+          "a": 0.03,
+          "b": 2.84
+        }
+      },
+      "prompt": {
+        "color_name": "金属香槟金浅 / Metallic Champagne Light Gold",
+        "color_code": "C-215",
+        "color_value": "#D1CFCA",
+        "lab_value": "Lab(L=83.18, a=0.03, b=2.84)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，金属香槟金浅（Metallic Champagne Light Gold），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #D1CFCA，Lab 辅助参考 Lab(L=83.18, a=0.03, b=2.84)"
+      },
+      "tags": [
+        "PET",
+        "金属香槟金浅",
+        "Metallic Champagne Light Gold"
+      ]
+    },
+    {
+      "id": "C-216",
+      "source_id": "NO.072",
+      "serial": "C-216",
+      "names": {
+        "zh": "金属魂动红",
+        "en": "Metallic Soul Red",
+        "aliases": [
+          "C-216",
+          "金属魂动红",
+          "Metallic Soul Red",
+          "metallicsoulred"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 42.26,
+          "a": 51.61,
+          "b": 17.7
+        },
+        "hex": "#B1354A",
+        "family": null
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/C-216-measurement-92.png",
+        "source_swatch_name": "C-216-measurement-92.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 92,
+        "measured_at": "2026-05-26",
+        "preview_lab": {
+          "L": 42.26,
+          "a": 51.61,
+          "b": 17.7
+        }
+      },
+      "prompt": {
+        "color_name": "金属魂动红 / Metallic Soul Red",
+        "color_code": "C-216",
+        "color_value": "#B1354A",
+        "lab_value": "Lab(L=42.26, a=51.61, b=17.7)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，金属魂动红（Metallic Soul Red），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #B1354A，Lab 辅助参考 Lab(L=42.26, a=51.61, b=17.7)"
+      },
+      "tags": [
+        "PET",
+        "金属魂动红",
+        "Metallic Soul Red"
+      ]
+    },
+    {
+      "id": "C-217",
+      "source_id": "NO.073",
+      "serial": "C-217",
+      "names": {
+        "zh": "金属土豪金",
+        "en": "Metallic Local Tyrants Gold",
+        "aliases": [
+          "C-217",
+          "金属土豪金",
+          "Metallic Local Tyrants Gold",
+          "metalliclocaltyrantsgold"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 66.82,
+          "a": 18.0,
+          "b": 54.31
+        },
+        "hex": "#D3953D",
+        "family": null
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/C-217-measurement-93.png",
+        "source_swatch_name": "C-217-measurement-93.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 93,
+        "measured_at": "2026-05-26",
+        "preview_lab": {
+          "L": 66.82,
+          "a": 18.0,
+          "b": 54.31
+        }
+      },
+      "prompt": {
+        "color_name": "金属土豪金 / Metallic Local Tyrants Gold",
+        "color_code": "C-217",
+        "color_value": "#D3953D",
+        "lab_value": "Lab(L=66.82, a=18.0, b=54.31)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，金属土豪金（Metallic Local Tyrants Gold），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #D3953D，Lab 辅助参考 Lab(L=66.82, a=18.0, b=54.31)"
+      },
+      "tags": [
+        "PET",
+        "金属土豪金",
+        "Metallic Local Tyrants Gold"
+      ]
+    },
+    {
+      "id": "C-218",
+      "source_id": "NO.074",
+      "serial": "C-218",
+      "names": {
+        "zh": "暗影蓝",
+        "en": "Shadow Blue",
+        "aliases": [
+          "C-218",
+          "暗影蓝",
+          "Shadow Blue",
+          "shadowblue"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 35.5,
+          "a": -8.91,
+          "b": -17.83
+        },
+        "hex": "#315970",
+        "family": null
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/C-218-measurement-94.png",
+        "source_swatch_name": "C-218-measurement-94.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 94,
+        "measured_at": "2026-05-26",
+        "preview_lab": {
+          "L": 35.5,
+          "a": -8.91,
+          "b": -17.83
+        }
+      },
+      "prompt": {
+        "color_name": "暗影蓝 / Shadow Blue",
+        "color_code": "C-218",
+        "color_value": "#315970",
+        "lab_value": "Lab(L=35.5, a=-8.91, b=-17.83)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，暗影蓝（Shadow Blue），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #315970，Lab 辅助参考 Lab(L=35.5, a=-8.91, b=-17.83)"
+      },
+      "tags": [
+        "PET",
+        "暗影蓝",
+        "Shadow Blue"
+      ]
+    },
+    {
+      "id": "C-219",
+      "source_id": "NO.075",
+      "serial": "C-219",
+      "names": {
+        "zh": "午夜青",
+        "en": "Midnight Blue",
+        "aliases": [
+          "C-219",
+          "午夜青",
+          "Midnight Blue",
+          "midnightblue"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 30.72,
+          "a": -4.82,
+          "b": -11.88
+        },
+        "hex": "#374B5B",
+        "family": null
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/C-219-measurement-95.png",
+        "source_swatch_name": "C-219-measurement-95.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 95,
+        "measured_at": "2026-05-26",
+        "preview_lab": {
+          "L": 30.72,
+          "a": -4.82,
+          "b": -11.88
+        }
+      },
+      "prompt": {
+        "color_name": "午夜青 / Midnight Blue",
+        "color_code": "C-219",
+        "color_value": "#374B5B",
+        "lab_value": "Lab(L=30.72, a=-4.82, b=-11.88)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，午夜青（Midnight Blue），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #374B5B，Lab 辅助参考 Lab(L=30.72, a=-4.82, b=-11.88)"
+      },
+      "tags": [
+        "PET",
+        "午夜青",
+        "Midnight Blue"
+      ]
+    },
+    {
+      "id": "C-222",
+      "source_id": "NO.076",
+      "serial": "C-222",
+      "names": {
+        "zh": "樱桃红",
+        "en": "Cherry Red",
+        "aliases": [
+          "C-222",
+          "樱桃红",
+          "Cherry Red",
+          "cherryred"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 35.46,
+          "a": 36.12,
+          "b": 11.47
+        },
+        "hex": "#893843",
+        "family": null
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/C-222-measurement-97.png",
+        "source_swatch_name": "C-222-measurement-97.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 97,
+        "measured_at": "2026-05-26",
+        "preview_lab": {
+          "L": 35.46,
+          "a": 36.12,
+          "b": 11.47
+        }
+      },
+      "prompt": {
+        "color_name": "樱桃红 / Cherry Red",
+        "color_code": "C-222",
+        "color_value": "#893843",
+        "lab_value": "Lab(L=35.46, a=36.12, b=11.47)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，樱桃红（Cherry Red），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #893843，Lab 辅助参考 Lab(L=35.46, a=36.12, b=11.47)"
+      },
+      "tags": [
+        "PET",
+        "樱桃红",
+        "Cherry Red"
+      ]
+    },
+    {
+      "id": "C-223",
+      "source_id": "NO.077",
+      "serial": "C-223",
+      "names": {
+        "zh": "金属钨钢灰",
+        "en": "Metallic Tungsten Grey",
+        "aliases": [
+          "C-223",
+          "金属钨钢灰",
+          "Metallic Tungsten Grey",
+          "metallictungstengrey"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 50.54,
+          "a": -0.02,
+          "b": 0.37
+        },
+        "hex": "#787878",
+        "family": null
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/C-223-measurement-98.png",
+        "source_swatch_name": "C-223-measurement-98.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 98,
+        "measured_at": "2026-05-26",
+        "preview_lab": {
+          "L": 50.54,
+          "a": -0.02,
+          "b": 0.37
+        }
+      },
+      "prompt": {
+        "color_name": "金属钨钢灰 / Metallic Tungsten Grey",
+        "color_code": "C-223",
+        "color_value": "#787878",
+        "lab_value": "Lab(L=50.54, a=-0.02, b=0.37)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，金属钨钢灰（Metallic Tungsten Grey），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #787878，Lab 辅助参考 Lab(L=50.54, a=-0.02, b=0.37)"
+      },
+      "tags": [
+        "PET",
+        "金属钨钢灰",
+        "Metallic Tungsten Grey"
+      ]
+    },
+    {
+      "id": "C-224",
+      "source_id": "NO.078",
+      "serial": "C-224",
+      "names": {
+        "zh": "玫瑰金",
+        "en": "Rose Gold",
+        "aliases": [
+          "C-224",
+          "玫瑰金",
+          "Rose Gold",
+          "rosegold"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 69.19,
+          "a": 21.58,
+          "b": 5.68
+        },
+        "hex": "#D19AA0",
+        "family": null
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/C-224-measurement-99.png",
+        "source_swatch_name": "C-224-measurement-99.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 99,
+        "measured_at": "2026-05-26",
+        "preview_lab": {
+          "L": 69.19,
+          "a": 21.58,
+          "b": 5.68
+        }
+      },
+      "prompt": {
+        "color_name": "玫瑰金 / Rose Gold",
+        "color_code": "C-224",
+        "color_value": "#D19AA0",
+        "lab_value": "Lab(L=69.19, a=21.58, b=5.68)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，玫瑰金（Rose Gold），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #D19AA0，Lab 辅助参考 Lab(L=69.19, a=21.58, b=5.68)"
+      },
+      "tags": [
+        "PET",
+        "玫瑰金",
+        "Rose Gold"
+      ]
+    },
+    {
+      "id": "C-225",
+      "source_id": "NO.079",
+      "serial": "C-225",
+      "names": {
+        "zh": "金属宝石蓝",
+        "en": "Metallic Sapphire Blue",
+        "aliases": [
+          "C-225",
+          "金属宝石蓝",
+          "Metallic Sapphire Blue",
+          "metallicsapphireblue"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 41.7,
+          "a": -1.65,
+          "b": -43.24
+        },
+        "hex": "#2566AA",
+        "family": null
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/C-225-measurement-100.png",
+        "source_swatch_name": "C-225-measurement-100.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 100,
+        "measured_at": "2026-05-26",
+        "preview_lab": {
+          "L": 41.7,
+          "a": -1.65,
+          "b": -43.24
+        }
+      },
+      "prompt": {
+        "color_name": "金属宝石蓝 / Metallic Sapphire Blue",
+        "color_code": "C-225",
+        "color_value": "#2566AA",
+        "lab_value": "Lab(L=41.7, a=-1.65, b=-43.24)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，金属宝石蓝（Metallic Sapphire Blue），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #2566AA，Lab 辅助参考 Lab(L=41.7, a=-1.65, b=-43.24)"
+      },
+      "tags": [
+        "PET",
+        "金属宝石蓝",
+        "Metallic Sapphire Blue"
+      ]
+    },
+    {
+      "id": "C-226",
+      "source_id": "NO.080",
+      "serial": "C-226",
+      "names": {
+        "zh": "金属湖水蓝",
+        "en": "Metallic Lake Blue",
+        "aliases": [
+          "C-226",
+          "金属湖水蓝",
+          "Metallic Lake Blue",
+          "metalliclakeblue"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 66.94,
+          "a": -37.37,
+          "b": -7.55
+        },
+        "hex": "#30B5AF",
+        "family": null
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/C-226-measurement-101.png",
+        "source_swatch_name": "C-226-measurement-101.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 101,
+        "measured_at": "2026-05-26",
+        "preview_lab": {
+          "L": 66.94,
+          "a": -37.37,
+          "b": -7.55
+        }
+      },
+      "prompt": {
+        "color_name": "金属湖水蓝 / Metallic Lake Blue",
+        "color_code": "C-226",
+        "color_value": "#30B5AF",
+        "lab_value": "Lab(L=66.94, a=-37.37, b=-7.55)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，金属湖水蓝（Metallic Lake Blue），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #30B5AF，Lab 辅助参考 Lab(L=66.94, a=-37.37, b=-7.55)"
+      },
+      "tags": [
+        "PET",
+        "金属湖水蓝",
+        "Metallic Lake Blue"
+      ]
+    },
+    {
+      "id": "D-301",
+      "source_id": "NO.081",
+      "serial": "D-301",
+      "names": {
+        "zh": "液态龙胆红",
+        "en": "Liquid Gentian Red",
+        "aliases": [
+          "D-301",
+          "液态龙胆红",
+          "Liquid Gentian Red",
+          "liquidgentianred"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 28.89,
+          "a": 19.87,
+          "b": 4.29
+        },
+        "hex": "#62383E",
+        "family": null
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/D-301-measurement-102.png",
+        "source_swatch_name": "D-301-measurement-102.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 102,
+        "measured_at": "2026-05-26",
+        "preview_lab": {
+          "L": 28.89,
+          "a": 19.87,
+          "b": 4.29
+        }
+      },
+      "prompt": {
+        "color_name": "液态龙胆红 / Liquid Gentian Red",
+        "color_code": "D-301",
+        "color_value": "#62383E",
+        "lab_value": "Lab(L=28.89, a=19.87, b=4.29)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，液态龙胆红（Liquid Gentian Red），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #62383E，Lab 辅助参考 Lab(L=28.89, a=19.87, b=4.29)"
+      },
+      "tags": [
+        "PET",
+        "液态龙胆红",
+        "Liquid Gentian Red"
+      ]
+    },
+    {
+      "id": "D-302",
+      "source_id": "NO.082",
+      "serial": "D-302",
+      "names": {
+        "zh": "液态银",
+        "en": "Liquid Silver",
+        "aliases": [
+          "D-302",
+          "液态银",
+          "Liquid Silver",
+          "liquidsilver"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 62.72,
+          "a": -0.4,
+          "b": 2.62
+        },
+        "hex": "#999893",
+        "family": null
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/D-302-measurement-103.png",
+        "source_swatch_name": "D-302-measurement-103.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 103,
+        "measured_at": "2026-05-26",
+        "preview_lab": {
+          "L": 62.72,
+          "a": -0.4,
+          "b": 2.62
+        }
+      },
+      "prompt": {
+        "color_name": "液态银 / Liquid Silver",
+        "color_code": "D-302",
+        "color_value": "#999893",
+        "lab_value": "Lab(L=62.72, a=-0.4, b=2.62)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，液态银（Liquid Silver），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #999893，Lab 辅助参考 Lab(L=62.72, a=-0.4, b=2.62)"
+      },
+      "tags": [
+        "PET",
+        "液态银",
+        "Liquid Silver"
+      ]
+    },
+    {
+      "id": "D-303",
+      "source_id": "NO.083",
+      "serial": "D-303",
+      "names": {
+        "zh": "阿卡金",
+        "en": "Aka Gold",
+        "aliases": [
+          "D-303",
+          "阿卡金",
+          "Aka Gold",
+          "akagold"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 75.08,
+          "a": -0.73,
+          "b": 7.25
+        },
+        "hex": "#BCB9AB",
+        "family": null
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/D-303-measurement-104.png",
+        "source_swatch_name": "D-303-measurement-104.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 104,
+        "measured_at": "2026-05-26",
+        "preview_lab": {
+          "L": 75.08,
+          "a": -0.73,
+          "b": 7.25
+        }
+      },
+      "prompt": {
+        "color_name": "阿卡金 / Aka Gold",
+        "color_code": "D-303",
+        "color_value": "#BCB9AB",
+        "lab_value": "Lab(L=75.08, a=-0.73, b=7.25)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，阿卡金（Aka Gold），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #BCB9AB，Lab 辅助参考 Lab(L=75.08, a=-0.73, b=7.25)"
+      },
+      "tags": [
+        "PET",
+        "阿卡金",
+        "Aka Gold"
+      ]
+    },
+    {
+      "id": "D-304",
+      "source_id": "NO.084",
+      "serial": "D-304",
+      "names": {
+        "zh": "香奈儿黄",
+        "en": "Chanel yellow",
+        "aliases": [
+          "D-304",
+          "香奈儿黄",
+          "Chanel yellow",
+          "chanelyellow"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 90.52,
+          "a": -8.07,
+          "b": 31.42
+        },
+        "hex": "#E6E7A7",
+        "family": null
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/D-304-measurement-105.png",
+        "source_swatch_name": "D-304-measurement-105.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 105,
+        "measured_at": "2026-05-26",
+        "preview_lab": {
+          "L": 90.52,
+          "a": -8.07,
+          "b": 31.42
+        }
+      },
+      "prompt": {
+        "color_name": "香奈儿黄 / Chanel yellow",
+        "color_code": "D-304",
+        "color_value": "#E6E7A7",
+        "lab_value": "Lab(L=90.52, a=-8.07, b=31.42)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，香奈儿黄（Chanel yellow），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #E6E7A7，Lab 辅助参考 Lab(L=90.52, a=-8.07, b=31.42)"
+      },
+      "tags": [
+        "PET",
+        "香奈儿黄",
+        "Chanel yellow"
+      ]
+    },
+    {
+      "id": "D-305",
+      "source_id": "NO.085",
+      "serial": "D-305",
+      "names": {
+        "zh": "嵯峨绿",
+        "en": "Saga Green",
+        "aliases": [
+          "D-305",
+          "嵯峨绿",
+          "Saga Green",
+          "sagagreen"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 78.67,
+          "a": -13.34,
+          "b": 0.5
+        },
+        "hex": "#A8CAC1",
+        "family": null
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/D-305-measurement-106.png",
+        "source_swatch_name": "D-305-measurement-106.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 106,
+        "measured_at": "2026-05-26",
+        "preview_lab": {
+          "L": 78.67,
+          "a": -13.34,
+          "b": 0.5
+        }
+      },
+      "prompt": {
+        "color_name": "嵯峨绿 / Saga Green",
+        "color_code": "D-305",
+        "color_value": "#A8CAC1",
+        "lab_value": "Lab(L=78.67, a=-13.34, b=0.5)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，嵯峨绿（Saga Green），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #A8CAC1，Lab 辅助参考 Lab(L=78.67, a=-13.34, b=0.5)"
+      },
+      "tags": [
+        "PET",
+        "嵯峨绿",
+        "Saga Green"
+      ]
+    },
+    {
+      "id": "D-306",
+      "source_id": "NO.086",
+      "serial": "D-306",
+      "names": {
+        "zh": "星黛紫",
+        "en": "Star Purple",
+        "aliases": [
+          "D-306",
+          "星黛紫",
+          "Star Purple",
+          "starpurple"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 81.72,
+          "a": 5.81,
+          "b": -13.06
+        },
+        "hex": "#CDC8E4",
+        "family": null
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/D-306-measurement-107.png",
+        "source_swatch_name": "D-306-measurement-107.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 107,
+        "measured_at": "2026-05-26",
+        "preview_lab": {
+          "L": 81.72,
+          "a": 5.81,
+          "b": -13.06
+        }
+      },
+      "prompt": {
+        "color_name": "星黛紫 / Star Purple",
+        "color_code": "D-306",
+        "color_value": "#CDC8E4",
+        "lab_value": "Lab(L=81.72, a=5.81, b=-13.06)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，星黛紫（Star Purple），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #CDC8E4，Lab 辅助参考 Lab(L=81.72, a=5.81, b=-13.06)"
+      },
+      "tags": [
+        "PET",
+        "星黛紫",
+        "Star Purple"
+      ]
+    },
+    {
+      "id": "D-307",
+      "source_id": "NO.087",
+      "serial": "D-307",
+      "names": {
+        "zh": "银幻紫",
+        "en": "Silver Magic Purple",
+        "aliases": [
+          "D-307",
+          "银幻紫",
+          "Silver Magic Purple",
+          "silvermagicpurple"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 78.28,
+          "a": 2.16,
+          "b": -15.99
+        },
+        "hex": "#BAC1DF",
+        "family": null
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/D-307-measurement-108.png",
+        "source_swatch_name": "D-307-measurement-108.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 108,
+        "measured_at": "2026-05-26",
+        "preview_lab": {
+          "L": 78.28,
+          "a": 2.16,
+          "b": -15.99
+        }
+      },
+      "prompt": {
+        "color_name": "银幻紫 / Silver Magic Purple",
+        "color_code": "D-307",
+        "color_value": "#BAC1DF",
+        "lab_value": "Lab(L=78.28, a=2.16, b=-15.99)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，银幻紫（Silver Magic Purple），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #BAC1DF，Lab 辅助参考 Lab(L=78.28, a=2.16, b=-15.99)"
+      },
+      "tags": [
+        "PET",
+        "银幻紫",
+        "Silver Magic Purple"
+      ]
+    },
+    {
+      "id": "D-308",
+      "source_id": "NO.088",
+      "serial": "D-308",
+      "names": {
+        "zh": "奥维拉紫",
+        "en": "Olvera Purple",
+        "aliases": [
+          "D-308",
+          "奥维拉紫",
+          "Olvera Purple",
+          "olverapurple"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 55.93,
+          "a": 9.7,
+          "b": -26.62
+        },
+        "hex": "#8482B4",
+        "family": null
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/D-308-measurement-109.png",
+        "source_swatch_name": "D-308-measurement-109.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 109,
+        "measured_at": "2026-05-26",
+        "preview_lab": {
+          "L": 55.93,
+          "a": 9.7,
+          "b": -26.62
+        }
+      },
+      "prompt": {
+        "color_name": "奥维拉紫 / Olvera Purple",
+        "color_code": "D-308",
+        "color_value": "#8482B4",
+        "lab_value": "Lab(L=55.93, a=9.7, b=-26.62)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，奥维拉紫（Olvera Purple），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #8482B4，Lab 辅助参考 Lab(L=55.93, a=9.7, b=-26.62)"
+      },
+      "tags": [
+        "PET",
+        "奥维拉紫",
+        "Olvera Purple"
+      ]
+    },
+    {
+      "id": "D-309",
+      "source_id": "NO.089",
+      "serial": "D-309",
+      "names": {
+        "zh": "玛雅蝴蝶绿",
+        "en": "Mayan Butterfly Green",
+        "aliases": [
+          "D-309",
+          "玛雅蝴蝶绿",
+          "Mayan Butterfly Green",
+          "mayanbutterflygreen"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 87.3,
+          "a": -12.94,
+          "b": 25.57
+        },
+        "hex": "#D0E1A9",
+        "family": null
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/D-309-measurement-110.png",
+        "source_swatch_name": "D-309-measurement-110.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 110,
+        "measured_at": "2026-05-26",
+        "preview_lab": {
+          "L": 87.3,
+          "a": -12.94,
+          "b": 25.57
+        }
+      },
+      "prompt": {
+        "color_name": "玛雅蝴蝶绿 / Mayan Butterfly Green",
+        "color_code": "D-309",
+        "color_value": "#D0E1A9",
+        "lab_value": "Lab(L=87.3, a=-12.94, b=25.57)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，玛雅蝴蝶绿（Mayan Butterfly Green），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #D0E1A9，Lab 辅助参考 Lab(L=87.3, a=-12.94, b=25.57)"
+      },
+      "tags": [
+        "PET",
+        "玛雅蝴蝶绿",
+        "Mayan Butterfly Green"
+      ]
+    },
+    {
+      "id": "D-310",
+      "source_id": "NO.090",
+      "serial": "D-310",
+      "names": {
+        "zh": "长春花蓝",
+        "en": "Periwinkle Blue",
+        "aliases": [
+          "D-310",
+          "长春花蓝",
+          "Periwinkle Blue",
+          "periwinkleblue"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 61.96,
+          "a": 3.98,
+          "b": -36.01
+        },
+        "hex": "#7E95D6",
+        "family": null
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/D-310-measurement-111.png",
+        "source_swatch_name": "D-310-measurement-111.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 111,
+        "measured_at": "2026-05-26",
+        "preview_lab": {
+          "L": 61.96,
+          "a": 3.98,
+          "b": -36.01
+        }
+      },
+      "prompt": {
+        "color_name": "长春花蓝 / Periwinkle Blue",
+        "color_code": "D-310",
+        "color_value": "#7E95D6",
+        "lab_value": "Lab(L=61.96, a=3.98, b=-36.01)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，长春花蓝（Periwinkle Blue），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #7E95D6，Lab 辅助参考 Lab(L=61.96, a=3.98, b=-36.01)"
+      },
+      "tags": [
+        "PET",
+        "长春花蓝",
+        "Periwinkle Blue"
+      ]
+    },
+    {
+      "id": "D-312",
+      "source_id": "NO.091",
+      "serial": "D-312",
+      "names": {
+        "zh": "亮面曙光白",
+        "en": "Bright Light White",
+        "aliases": [
+          "D-312",
+          "亮面曙光白",
+          "Bright Light White",
+          "brightlightwhite"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 92.65,
+          "a": -3.19,
+          "b": 1.91
+        },
+        "hex": "#E2ECED",
+        "family": null
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/D-312-measurement-113.png",
+        "source_swatch_name": "D-312-measurement-113.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 113,
+        "measured_at": "2026-05-26",
+        "preview_lab": {
+          "L": 92.58,
+          "a": -3.04,
+          "b": -1.84
+        }
+      },
+      "prompt": {
+        "color_name": "亮面曙光白 / Bright Light White",
+        "color_code": "D-312",
+        "color_value": "#E2ECED",
+        "lab_value": "Lab(L=92.65, a=-3.19, b=1.91)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，亮面曙光白（Bright Light White），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #E2ECED，Lab 辅助参考 Lab(L=92.65, a=-3.19, b=1.91)"
+      },
+      "tags": [
+        "PET",
+        "亮面曙光白",
+        "Bright Light White"
+      ]
+    },
+    {
+      "id": "D-313",
+      "source_id": "NO.092",
+      "serial": "D-313",
+      "names": {
+        "zh": "英国皇家绿",
+        "en": "Royal Green",
+        "aliases": [
+          "D-313",
+          "英国皇家绿",
+          "Royal Green",
+          "royalgreen"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 41.63,
+          "a": -16.66,
+          "b": 2.06
+        },
+        "hex": "#436A5E",
+        "family": null
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/D-313-measurement-114.png",
+        "source_swatch_name": "D-313-measurement-114.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 114,
+        "measured_at": "2026-05-26",
+        "preview_lab": {
+          "L": 41.63,
+          "a": -16.66,
+          "b": 2.06
+        }
+      },
+      "prompt": {
+        "color_name": "英国皇家绿 / Royal Green",
+        "color_code": "D-313",
+        "color_value": "#436A5E",
+        "lab_value": "Lab(L=41.63, a=-16.66, b=2.06)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，英国皇家绿（Royal Green），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #436A5E，Lab 辅助参考 Lab(L=41.63, a=-16.66, b=2.06)"
+      },
+      "tags": [
+        "PET",
+        "英国皇家绿",
+        "Royal Green"
+      ]
+    },
+    {
+      "id": "D-314",
+      "source_id": "NO.093",
+      "serial": "D-314",
+      "names": {
+        "zh": "亮石墨灰",
+        "en": "Bright Graphite Grey",
+        "aliases": [
+          "D-314",
+          "亮石墨灰",
+          "Bright Graphite Grey",
+          "brightgraphitegrey"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 48.95,
+          "a": 0.03,
+          "b": -0.25
+        },
+        "hex": "#747475",
+        "family": null
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/D-314-measurement-115.png",
+        "source_swatch_name": "D-314-measurement-115.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 115,
+        "measured_at": "2026-05-26",
+        "preview_lab": {
+          "L": 48.95,
+          "a": 0.03,
+          "b": -0.25
+        }
+      },
+      "prompt": {
+        "color_name": "亮石墨灰 / Bright Graphite Grey",
+        "color_code": "D-314",
+        "color_value": "#747475",
+        "lab_value": "Lab(L=48.95, a=0.03, b=-0.25)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，亮石墨灰（Bright Graphite Grey），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #747475，Lab 辅助参考 Lab(L=48.95, a=0.03, b=-0.25)"
+      },
+      "tags": [
+        "PET",
+        "亮石墨灰",
+        "Bright Graphite Grey"
+      ]
+    },
+    {
+      "id": "D-315",
+      "source_id": "NO.094",
+      "serial": "D-315",
+      "names": {
+        "zh": "钻石蓝莓红",
+        "en": "Diamond Blueberry Red",
+        "aliases": [
+          "D-315",
+          "钻石蓝莓红",
+          "Diamond Blueberry Red",
+          "diamondblueberryred"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 46.74,
+          "a": 3.04,
+          "b": -32.27
+        },
+        "hex": "#586FA5",
+        "family": null
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/D-315-measurement-116.png",
+        "source_swatch_name": "D-315-measurement-116.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 116,
+        "measured_at": "2026-05-26",
+        "preview_lab": {
+          "L": 46.74,
+          "a": 3.04,
+          "b": -32.27
+        }
+      },
+      "prompt": {
+        "color_name": "钻石蓝莓红 / Diamond Blueberry Red",
+        "color_code": "D-315",
+        "color_value": "#586FA5",
+        "lab_value": "Lab(L=46.74, a=3.04, b=-32.27)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，钻石蓝莓红（Diamond Blueberry Red），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #586FA5，Lab 辅助参考 Lab(L=46.74, a=3.04, b=-32.27)"
+      },
+      "tags": [
+        "PET",
+        "钻石蓝莓红",
+        "Diamond Blueberry Red"
+      ]
+    },
+    {
+      "id": "D-316",
+      "source_id": "NO.095",
+      "serial": "D-316",
+      "names": {
+        "zh": "星空灰魅影",
+        "en": "Starry Sky Charm Gray",
+        "aliases": [
+          "D-316",
+          "星空灰魅影",
+          "Starry Sky Charm Gray",
+          "starryskycharmgray"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 43.56,
+          "a": 8.78,
+          "b": -2.91
+        },
+        "hex": "#74626C",
+        "family": null
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/D-316-measurement-117.png",
+        "source_swatch_name": "D-316-measurement-117.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 117,
+        "measured_at": "2026-05-26",
+        "preview_lab": {
+          "L": 43.56,
+          "a": 8.78,
+          "b": -2.91
+        }
+      },
+      "prompt": {
+        "color_name": "星空灰魅影 / Starry Sky Charm Gray",
+        "color_code": "D-316",
+        "color_value": "#74626C",
+        "lab_value": "Lab(L=43.56, a=8.78, b=-2.91)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，星空灰魅影（Starry Sky Charm Gray），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #74626C，Lab 辅助参考 Lab(L=43.56, a=8.78, b=-2.91)"
+      },
+      "tags": [
+        "PET",
+        "星空灰魅影",
+        "Starry Sky Charm Gray"
+      ]
+    },
+    {
+      "id": "D-317",
+      "source_id": "NO.096",
+      "serial": "D-317",
+      "names": {
+        "zh": "星空黑魅红",
+        "en": "Starry Sky Black Charm Red",
+        "aliases": [
+          "D-317",
+          "星空黑魅红",
+          "Starry Sky Black Charm Red",
+          "starryskyblackcharmred"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 24.87,
+          "a": 0.36,
+          "b": -1.52
+        },
+        "hex": "#3B3B3D",
+        "family": null
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/D-317-measurement-118.png",
+        "source_swatch_name": "D-317-measurement-118.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 118,
+        "measured_at": "2026-05-26",
+        "preview_lab": {
+          "L": 24.87,
+          "a": 0.36,
+          "b": -1.52
+        }
+      },
+      "prompt": {
+        "color_name": "星空黑魅红 / Starry Sky Black Charm Red",
+        "color_code": "D-317",
+        "color_value": "#3B3B3D",
+        "lab_value": "Lab(L=24.87, a=0.36, b=-1.52)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，星空黑魅红（Starry Sky Black Charm Red），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #3B3B3D，Lab 辅助参考 Lab(L=24.87, a=0.36, b=-1.52)"
+      },
+      "tags": [
+        "PET",
+        "星空黑魅红",
+        "Starry Sky Black Charm Red"
+      ]
+    },
+    {
+      "id": "D-318",
+      "source_id": "NO.097",
+      "serial": "D-318",
+      "names": {
+        "zh": "哑面钻石灰魅蓝",
+        "en": "Matte Diamond Gray Charm Blue",
+        "aliases": [
+          "D-318",
+          "哑面钻石灰魅蓝",
+          "Matte Diamond Gray Charm Blue",
+          "mattediamondgraycharmblue"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 59.87,
+          "a": -7.28,
+          "b": -0.86
+        },
+        "hex": "#829491",
+        "family": null
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/D-318-measurement-119.png",
+        "source_swatch_name": "D-318-measurement-119.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 119,
+        "measured_at": "2026-05-26",
+        "preview_lab": {
+          "L": 59.87,
+          "a": -7.28,
+          "b": -0.86
+        }
+      },
+      "prompt": {
+        "color_name": "哑面钻石灰魅蓝 / Matte Diamond Gray Charm Blue",
+        "color_code": "D-318",
+        "color_value": "#829491",
+        "lab_value": "Lab(L=59.87, a=-7.28, b=-0.86)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，哑面钻石灰魅蓝（Matte Diamond Gray Charm Blue），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #829491，Lab 辅助参考 Lab(L=59.87, a=-7.28, b=-0.86)"
+      },
+      "tags": [
+        "PET",
+        "哑面钻石灰魅蓝",
+        "Matte Diamond Gray Charm Blue"
+      ]
+    },
+    {
+      "id": "D-319",
+      "source_id": "NO.098",
+      "serial": "D-319",
+      "names": {
+        "zh": "罗曼尼红",
+        "en": "Roman Red",
+        "aliases": [
+          "D-319",
+          "罗曼尼红",
+          "Roman Red",
+          "romanred"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 37.17,
+          "a": 36.26,
+          "b": 14.18
+        },
+        "hex": "#8F3C43",
+        "family": null
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/D-319-measurement-120.png",
+        "source_swatch_name": "D-319-measurement-120.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 120,
+        "measured_at": "2026-05-26",
+        "preview_lab": {
+          "L": 37.17,
+          "a": 36.26,
+          "b": 14.18
+        }
+      },
+      "prompt": {
+        "color_name": "罗曼尼红 / Roman Red",
+        "color_code": "D-319",
+        "color_value": "#8F3C43",
+        "lab_value": "Lab(L=37.17, a=36.26, b=14.18)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，罗曼尼红（Roman Red），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #8F3C43，Lab 辅助参考 Lab(L=37.17, a=36.26, b=14.18)"
+      },
+      "tags": [
+        "PET",
+        "罗曼尼红",
+        "Roman Red"
+      ]
+    },
+    {
+      "id": "D-320",
+      "source_id": "NO.099",
+      "serial": "D-320",
+      "names": {
+        "zh": "车厘子红",
+        "en": "Cherry Red",
+        "aliases": [
+          "D-320",
+          "车厘子红",
+          "Cherry Red",
+          "cherryred"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 35.21,
+          "a": 23.07,
+          "b": 1.84
+        },
+        "hex": "#754451",
+        "family": null
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/D-320-measurement-121.png",
+        "source_swatch_name": "D-320-measurement-121.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 121,
+        "measured_at": "2026-05-26",
+        "preview_lab": {
+          "L": 35.21,
+          "a": 23.07,
+          "b": 1.84
+        }
+      },
+      "prompt": {
+        "color_name": "车厘子红 / Cherry Red",
+        "color_code": "D-320",
+        "color_value": "#754451",
+        "lab_value": "Lab(L=35.21, a=23.07, b=1.84)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，车厘子红（Cherry Red），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #754451，Lab 辅助参考 Lab(L=35.21, a=23.07, b=1.84)"
+      },
+      "tags": [
+        "PET",
+        "车厘子红",
+        "Cherry Red"
+      ]
+    },
+    {
+      "id": "D-321",
+      "source_id": "NO.100",
+      "serial": "D-321",
+      "names": {
+        "zh": "佛郎西斯卡绿",
+        "en": "Francesca Green",
+        "aliases": [
+          "D-321",
+          "佛郎西斯卡绿",
+          "Francesca Green",
+          "francescagreen"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 65.32,
+          "a": -11.02,
+          "b": 3.35
+        },
+        "hex": "#8BA498",
+        "family": null
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/D-321-measurement-122.png",
+        "source_swatch_name": "D-321-measurement-122.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 122,
+        "measured_at": "2026-05-26",
+        "preview_lab": {
+          "L": 65.32,
+          "a": -11.02,
+          "b": 3.35
+        }
+      },
+      "prompt": {
+        "color_name": "佛郎西斯卡绿 / Francesca Green",
+        "color_code": "D-321",
+        "color_value": "#8BA498",
+        "lab_value": "Lab(L=65.32, a=-11.02, b=3.35)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，佛郎西斯卡绿（Francesca Green），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #8BA498，Lab 辅助参考 Lab(L=65.32, a=-11.02, b=3.35)"
+      },
+      "tags": [
+        "PET",
+        "佛郎西斯卡绿",
+        "Francesca Green"
+      ]
+    },
+    {
+      "id": "D-322",
+      "source_id": "NO.101",
+      "serial": "D-322",
+      "names": {
+        "zh": "靛蓝紫雀绿",
+        "en": "Indigo Purple Finch Green",
+        "aliases": [
+          "D-322",
+          "靛蓝紫雀绿",
+          "Indigo Purple Finch Green",
+          "indigopurplefinchgreen"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 60.07,
+          "a": -16.39,
+          "b": 5.93
+        },
+        "hex": "#749986",
+        "family": null
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/D-322-measurement-123.png",
+        "source_swatch_name": "D-322-measurement-123.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 123,
+        "measured_at": "2026-05-26",
+        "preview_lab": {
+          "L": 60.07,
+          "a": -16.39,
+          "b": 5.93
+        }
+      },
+      "prompt": {
+        "color_name": "靛蓝紫雀绿 / Indigo Purple Finch Green",
+        "color_code": "D-322",
+        "color_value": "#749986",
+        "lab_value": "Lab(L=60.07, a=-16.39, b=5.93)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，靛蓝紫雀绿（Indigo Purple Finch Green），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #749986，Lab 辅助参考 Lab(L=60.07, a=-16.39, b=5.93)"
+      },
+      "tags": [
+        "PET",
+        "靛蓝紫雀绿",
+        "Indigo Purple Finch Green"
+      ]
+    },
+    {
+      "id": "D-323",
+      "source_id": "NO.102",
+      "serial": "D-323",
+      "names": {
+        "zh": "丹泉石蓝",
+        "en": "Tanzanite Blue",
+        "aliases": [
+          "D-323",
+          "丹泉石蓝",
+          "Tanzanite Blue",
+          "tanzaniteblue"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 33.29,
+          "a": -4.91,
+          "b": -18.25
+        },
+        "hex": "#36516B",
+        "family": null
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/D-323-measurement-124.png",
+        "source_swatch_name": "D-323-measurement-124.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 124,
+        "measured_at": "2026-05-26",
+        "preview_lab": {
+          "L": 33.29,
+          "a": -4.91,
+          "b": -18.25
+        }
+      },
+      "prompt": {
+        "color_name": "丹泉石蓝 / Tanzanite Blue",
+        "color_code": "D-323",
+        "color_value": "#36516B",
+        "lab_value": "Lab(L=33.29, a=-4.91, b=-18.25)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，丹泉石蓝（Tanzanite Blue），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #36516B，Lab 辅助参考 Lab(L=33.29, a=-4.91, b=-18.25)"
+      },
+      "tags": [
+        "PET",
+        "丹泉石蓝",
+        "Tanzanite Blue"
+      ]
+    },
+    {
+      "id": "D-324",
+      "source_id": "NO.103",
+      "serial": "D-324",
+      "names": {
+        "zh": "液态索玛托蓝",
+        "en": "Liquid Somato Blue",
+        "aliases": [
+          "D-324",
+          "液态索玛托蓝",
+          "Liquid Somato Blue",
+          "liquidsomatoblue"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 60.9,
+          "a": -4.45,
+          "b": -3.41
+        },
+        "hex": "#889699",
+        "family": null
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/D-324-measurement-125.png",
+        "source_swatch_name": "D-324-measurement-125.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 125,
+        "measured_at": "2026-05-26",
+        "preview_lab": {
+          "L": 60.9,
+          "a": -4.45,
+          "b": -3.41
+        }
+      },
+      "prompt": {
+        "color_name": "液态索玛托蓝 / Liquid Somato Blue",
+        "color_code": "D-324",
+        "color_value": "#889699",
+        "lab_value": "Lab(L=60.9, a=-4.45, b=-3.41)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，液态索玛托蓝（Liquid Somato Blue），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #889699，Lab 辅助参考 Lab(L=60.9, a=-4.45, b=-3.41)"
+      },
+      "tags": [
+        "PET",
+        "液态索玛托蓝",
+        "Liquid Somato Blue"
+      ]
+    },
+    {
+      "id": "D-325",
+      "source_id": "NO.104",
+      "serial": "D-325",
+      "names": {
+        "zh": "亮曜石黑",
+        "en": "Bright Obsidian Black",
+        "aliases": [
+          "D-325",
+          "亮曜石黑",
+          "Bright Obsidian Black",
+          "brightobsidianblack"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 27.69,
+          "a": -0.65,
+          "b": -1.01
+        },
+        "hex": "#404243",
+        "family": null
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/D-325-measurement-126.png",
+        "source_swatch_name": "D-325-measurement-126.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 126,
+        "measured_at": "2026-05-26",
+        "preview_lab": {
+          "L": 27.69,
+          "a": -0.65,
+          "b": -1.01
+        }
+      },
+      "prompt": {
+        "color_name": "亮曜石黑 / Bright Obsidian Black",
+        "color_code": "D-325",
+        "color_value": "#404243",
+        "lab_value": "Lab(L=27.69, a=-0.65, b=-1.01)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，亮曜石黑（Bright Obsidian Black），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #404243，Lab 辅助参考 Lab(L=27.69, a=-0.65, b=-1.01)"
+      },
+      "tags": [
+        "PET",
+        "亮曜石黑",
+        "Bright Obsidian Black"
+      ]
+    },
+    {
+      "id": "C-220",
+      "source_id": "NO.109",
+      "serial": "C-220",
+      "names": {
+        "zh": "威尼斯紫",
+        "en": "Venice Purple",
+        "aliases": [
+          "C-220",
+          "威尼斯紫",
+          "Venice Purple",
+          "venicepurple"
+        ]
+      },
+      "color": {
+        "lab": {
+          "L": 29.53,
+          "a": 11.63,
+          "b": -19.02
+        },
+        "hex": "#4C4063",
+        "family": null
+      },
+      "material": "PET",
+      "finish": {
+        "raw": null,
+        "prompt_label": "未标注",
+        "prompt_hint": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注"
+      },
+      "images": {
+        "swatch": "../assets/previews/C-220-measurement-96.png",
+        "source_swatch_name": "C-220-measurement-96.png",
+        "real_card": null,
+        "match_strategy": "exact_source_name"
+      },
+      "measurement": {
+        "source": "Card-color SQLite preview_hex",
+        "card_db": "/Users/fkycoya/Documents/Card-color/data/color-lab.db",
+        "measurement_id": 96,
+        "measured_at": "2026-05-26",
+        "preview_lab": {
+          "L": 29.53,
+          "a": 11.63,
+          "b": -19.02
+        }
+      },
+      "prompt": {
+        "color_name": "威尼斯紫 / Venice Purple",
+        "color_code": "C-220",
+        "color_value": "#4C4063",
+        "lab_value": "Lab(L=29.53, a=11.63, b=-19.02)",
+        "reference_priority": "preview_swatch_image",
+        "finish": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注",
+        "description": "PET改色膜，膜面效果以 preview 色卡图为准，HEX/Lab 仅作辅助标注，威尼斯紫（Venice Purple），以随图传入的 preview 色卡图作为目标颜色主依据，HEX 辅助标注 #4C4063，Lab 辅助参考 Lab(L=29.53, a=11.63, b=-19.02)"
+      },
+      "tags": [
+        "PET",
+        "威尼斯紫",
+        "Venice Purple"
+      ]
+    }
+  ]
+}
