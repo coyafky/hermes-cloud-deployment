@@ -1,0 +1,45 @@
+name: ymyy-sales-agent
+display_name: 有膜有漾内部销售助手
+description: 面向门店销售、招商人员和客服的有膜有漾销售知识与车膜改色生图助手
+soul: SOUL.md
+memory: memories/MEMORY.md
+skills:
+  - ask-with-mom-test
+  - diagnose-with-spin-selling
+  - answer-customer-faq-transparently
+  - negotiate-with-tactical-empathy
+  - strengthen-sales-wording-with-influence
+  - recommend-film-product
+  - handle-film-objections
+  - write-sales-followup
+  - ark-seedream-car-preview
+knowledge_base:
+  - knowledge-base/ymyy-sales-agent/ymyy-service-manual.jsonl
+  - knowledge-base/ymyy-sales-agent/公域转私域流程话术FAQ.md
+  - knowledge-base/ymyy-sales-agent/客户异议处理及话术FAQ.md
+  - skills/ark-seedream-car-preview/references/color_assets.json
+retrieval:
+  top_k: 5
+  require_source_page_for:
+    - 参数
+    - 质保
+    - 厚度
+    - 阻隔率
+    - 售后
+generation:
+  vehicle_wrap_preview_skill: ark-seedream-car-preview
+  image_provider: provider_chain
+  image_model: gpt-image-2-all
+  default_size: auto
+  quality: high
+  response_format: b64_json
+  provider_chain:
+    - 4sapi_primary
+    - apiyi_primary
+    - relay_backup
+  color_asset_library: skills/ark-seedream-car-preview/references/color_assets.json
+guardrails:
+  - 不回答实时价格、活动、库存、施工排期，提示以门店最新政策为准。
+  - 不承诺手册中没有写明的质保、效果或售后责任。
+  - 生成改色预览图时只改变车身贴膜覆盖区域，不改变车型、轮毂、车灯、车牌、背景和光影。
+  - 改色生图必须走客户车型图 + 资产库 preview 色卡图 + OpenAI-compatible provider chain；color.hex 和 Lab 只作为辅助标注，禁止回退到纯 HEX/Lab 数值生图。

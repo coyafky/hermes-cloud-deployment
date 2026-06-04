@@ -1,15 +1,15 @@
 # GitHub to Cloud Deployment
 
-本 skill 的正式发布链路以 GitHub 仓库为源头：
+本 skill 的正式发布链路以 GitHub 仓库为源头，并优先使用 Hermes profile distribution 更新：
 
 ```text
 local verified change
   -> push to coyafky/hermes-cloud-deployment
-  -> cloud Hermes Agent pulls/crawls the repository
-  -> cloud profile installs or refreshes ark-seedream-car-preview
+  -> cloud Hermes Agent runs hermes profile update ymyy-sales-agent
+  -> distribution refreshes SOUL/profile/skills/knowledge-base
 ```
 
-不要把本地临时 scp 当作正式发布方式。scp 只适合临时排障；可迭代版本应进入 GitHub，方便云服务器重复拉取、回滚和审计。
+不要把本地临时 scp 当作正式发布方式。scp 只适合临时排障；可迭代版本应进入 GitHub，云服务器通过 profile distribution 拉取，方便重复更新、回滚和审计。
 
 ## Repository Source
 
@@ -19,6 +19,24 @@ skills/ark-seedream-car-preview
 ```
 
 ## Cloud Update Flow
+
+首选方式：
+
+```bash
+hermes profile update ymyy-sales-agent
+```
+
+首次安装：
+
+```bash
+hermes profile install github.com/coyafky/hermes-cloud-deployment --name ymyy-sales-agent --alias
+```
+
+Hermes profile distribution 会保留云端本地 `.env`、memory、sessions、logs、auth 等用户数据。
+
+### Fallback: Manual Git Pull
+
+只有在 profile distribution 暂不可用或需要临时排障时，才使用手动 git pull + rsync。
 
 在云服务器中：
 

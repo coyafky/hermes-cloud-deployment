@@ -1,0 +1,29 @@
+name: ymyy-sales-agent
+version: 0.2.0
+description: "有膜有漾内部销售助手：销售知识、客户话术与车膜改色预览生成 profile"
+hermes_requires: ">=0.12.0"
+author: "coyafky"
+license: "Private"
+
+env_requires:
+  - name: WRAP_PROVIDER_CHAIN
+    description: "车膜改色生图 provider 顺序，例如 4sapi_primary,apiyi_primary,relay_backup"
+    required: false
+    default: "4sapi_primary,apiyi_primary,relay_backup"
+  - name: WRAP_PROVIDER_4SAPI_PRIMARY_API_KEY
+    description: "4sapi OpenAI-compatible image generation API key"
+    required: false
+    default: ""
+  - name: WRAP_PROVIDER_APIYI_PRIMARY_API_KEY
+    description: "APIYi OpenAI-compatible image generation API key"
+    required: false
+    default: ""
+
+distribution_owned:
+  - distribution.yaml
+  - README.md
+  - SOUL.md
+  - profile.yaml
+  - skills/
+  - knowledge-base/
+  - docs/
