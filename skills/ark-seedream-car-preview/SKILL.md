@@ -1,6 +1,6 @@
 ---
 name: ark-seedream-car-preview
-description: Hermes 车膜改色生图技能。根据客户实车图和车膜色卡资产库，查询色号/色名，组装稳定 prompt，调用火山方舟 Seedream 或 Xinghu GPTImage-2 中转站生成真实车身贴膜预览图，并可通过 OpenClaw 回传到微信或飞书。
+description: Hermes 车膜改色生图技能。根据客户实车图和车膜色卡资产库，查询色号/色名，组装稳定 prompt，通过多个 OpenAI-compatible 生图 API 中转站轮询生成真实车身贴膜预览图，并可通过 OpenClaw 回传到微信或飞书。
 ---
 
 # Hermes 车膜改色预览生图
@@ -39,8 +39,8 @@ Hermes profile 推荐传入 JSON：
     "target": ""
   },
   "generation": {
-    "size": "2K",
-    "watermark": false
+    "size": "auto",
+    "quality": "high"
   }
 }
 ```
@@ -102,7 +102,7 @@ python3 {baseDir}/scripts/build_color_assets.py \
 2. 优先用色号或色名查询 `references/color_assets.json`。
 3. 如果查到资产，使用 `--asset-id`，由脚本自动注入色名、色号、HEX/Lab 辅助值、材质提示，并自动把资产库 `images.swatch` 作为 `--color-ref` 传入。
 4. 如果查不到资产，必须使用 `--color-ref` 传入人工提供的色卡图；手动 HEX/Lab 只能作为辅助字段。
-5. 调用 `gen.py` 生成图片；默认走 Xinghu ChatGPT Image2 中转站。Ark 只作为显式指定 `--provider ark` 的备用路径。
+5. 调用 `gen.py` 生成图片；默认读取 `WRAP_PROVIDER_CHAIN` 或 `IMAGE_RELAY_BASE_URL`，通过多个 OpenAI-compatible 生图 API 中转站按顺序轮询。
 6. 如果需要直接回传客户，调用 `gen_and_send.py`，它会把 provider 参数透传到生图脚本。
 7. 输出结果返回给 Hermes，由 Hermes 决定展示、发送或进入人工质检。
 
@@ -119,36 +119,41 @@ python3 {baseDir}/scripts/gen.py \
 
 ## 生成图片
 
-使用资产库色号生成，默认走 Xinghu ChatGPT Image2 中转站：
+使用资产库色号生成，默认走 provider chain：
 
 ```bash
 python3 {baseDir}/scripts/gen.py \
   --vehicle-ref /absolute/path/to/customer-car.jpg \
   --asset-id A-001 \
+  --response-format b64_json \
   --quality high
 ```
 
 上面命令会自动把 `references/color_assets.json` 中的 `images.swatch` 追加为色卡参考图，不需要销售手动传 `--color-ref`。
 
-显式指定 Xinghu 的 ChatGPT Image2 中转站生成：
+显式指定某个 OpenAI-compatible 中转站生成：
 
 ```bash
 python3 {baseDir}/scripts/gen.py \
-  --provider xinghu \
+  --provider relay \
+  --base-url "$IMAGE_RELAY_BASE_URL" \
   --model gpt-image-2 \
   --vehicle-ref /absolute/path/to/customer-car.jpg \
   --asset-id A-001 \
   --size auto \
+  --response-format b64_json \
   --quality high
 ```
 
-Xinghu 路径会把客户车型图和资产库 preview 色卡图一起转成可上传的图片引用，并调用：
+OpenAI-compatible 路径会把客户车型图和资产库 preview 色卡图一起转成可上传的图片引用，并调用：
 
 ```text
-https://xinghuapi.com/v1/images/generations
+{BASE_URL}/images/generations
 ```
 
 其中车型图必须排在第一张，preview 色卡图必须排在第二张。色卡图仍是目标颜色和膜面视觉的主要依据，HEX/Lab 只进入 prompt 作为辅助识别字段。
+
+默认 `response-format=b64_json`，这样模型结果会直接解码保存到本地，避免某些中转站返回的临时 URL 在下载阶段出现 403 权限问题。只有明确需要保留远程 URL 时，才手动传 `--response-format url`。
 
 默认 `size=auto`，表示输出尺寸交给图像模型根据客户车型图的比例和内容决定；不要在飞书自动流程中固定为横版或方图。只有明确要做横版展示图、竖版海报或方图时，才手动传 `1536x1024`、`1024x1536` 或 `1024x1024`。
 
@@ -164,7 +169,8 @@ python3 {baseDir}/scripts/gen.py \
   --color-code "LPR803" \
   --color-value "#8B2942" \
   --finish "哑光" \
-  --description "低饱和高级感，偏暖红酒色"
+  --description "低饱和高级感，偏暖红酒色" \
+  --response-format b64_json
 ```
 
 ## 生成并回传
@@ -186,10 +192,12 @@ python3 {baseDir}/scripts/gen_and_send.py \
 python3 {baseDir}/scripts/gen_and_send.py \
   --channel feishu \
   --target oc_xxx \
-  --provider xinghu \
+  --provider relay \
+  --base-url "$IMAGE_RELAY_BASE_URL" \
   --model gpt-image-2 \
   --vehicle-ref /absolute/path/to/customer-car.jpg \
   --asset-id A-001 \
+  --response-format b64_json \
   --message "这是基于实车图和色卡生成的车膜预览图"
 ```
 
@@ -215,33 +223,27 @@ python3 {baseDir}/scripts/gen_and_send.py \
 - `relative_files`：相对路径
 - `media_tokens`：OpenClaw 可识别媒体 token
 - `color_asset`：本次命中的颜色资产摘要
-- `provider`：本次调用的生图 provider，例如 `ark` 或 `xinghu`
+- `provider`：本次成功调用的 provider 名称
+- `provider_attempts`：provider 轮询尝试记录，失败时包含错误摘要
 - `image_urls`：模型返回的原始图片 URL；如果 provider 返回 base64，脚本会直接解码保存到本地
 
 ## 依赖
 
 - `python3`
-- 默认 Xinghu GPTImage-2：`XINGHU_API_KEY` / `XINGHUAPI_API_KEY` / `CHATGPT_IMAGE_API_KEY` 任一环境变量
-- Ark 备用：`ARK_API_KEY` 或 `VOLCANO_ENGINE_API_KEY`
-- 可选：`~/.openclaw/openclaw.json` 中存在 `volcengine` auth profile
+- 一个或多个 OpenAI-compatible 生图 API 中转站
+- provider chain 环境变量，例如：
 
-默认模型与接口：
+```bash
+WRAP_PROVIDER_CHAIN=4sapi_primary,relay_backup
+WRAP_PROVIDER_4SAPI_PRIMARY_BASE_URL=https://4sapi.com/v1
+WRAP_PROVIDER_4SAPI_PRIMARY_API_KEY=...
+WRAP_PROVIDER_4SAPI_PRIMARY_MODEL=gpt-image-2
+WRAP_PROVIDER_4SAPI_PRIMARY_AUTH_SCHEME=bearer
 
-```text
-gpt-image-2
-https://xinghuapi.com/v1/images/generations
-```
-
-Ark 备用模型：
-
-```text
-doubao-seedream-4-5-251128
-```
-
-Ark 备用接口：
-
-```text
-https://ark.cn-beijing.volces.com/api/v3/images/generations
+WRAP_PROVIDER_RELAY_BACKUP_BASE_URL=https://backup.example.com/v1
+WRAP_PROVIDER_RELAY_BACKUP_API_KEY=...
+WRAP_PROVIDER_RELAY_BACKUP_MODEL=gpt-image-2
+WRAP_PROVIDER_RELAY_BACKUP_AUTH_SCHEME=bearer
 ```
 
 

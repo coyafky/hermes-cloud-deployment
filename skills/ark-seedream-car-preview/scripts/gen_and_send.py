@@ -18,8 +18,8 @@ def parse_args() -> argparse.Namespace:
         help="Immediate confirmation message sent before generation starts.",
     )
     ap.add_argument("--skip-status-message", action="store_true", default=False, help="Do not send an immediate confirmation message.")
-    ap.add_argument("--provider", default="", choices=["", "ark", "xinghu"], help="Image provider. Use xinghu for the ChatGPT Image2 relay.")
-    ap.add_argument("--base-url", default="", help="Xinghu OpenAI-compatible base URL.")
+    ap.add_argument("--provider", default="", help="Provider id or auto. Provider details come from WRAP_PROVIDER_CHAIN / IMAGE_RELAY_BASE_URL.")
+    ap.add_argument("--base-url", default="", help="OpenAI-compatible base URL.")
     ap.add_argument("--prompt", default="", help="Explicit prompt override.")
     ap.add_argument("--model", default="")
     ap.add_argument("--vehicle-ref", action="append", default=[])
@@ -33,10 +33,11 @@ def parse_args() -> argparse.Namespace:
     ap.add_argument("--finish", default="")
     ap.add_argument("--description", default="")
     ap.add_argument("--size", default="")
-    ap.add_argument("--quality", default="high", choices=["low", "medium", "high", "auto"], help="Xinghu GPTImage-2 quality.")
-    ap.add_argument("--response-format", default="url", choices=["url", "b64_json"])
-    ap.add_argument("--watermark", action="store_true", default=False)
+    ap.add_argument("--quality", default="high", choices=["low", "medium", "high", "auto"], help="Image generation quality.")
+    ap.add_argument("--response-format", default="b64_json", choices=["url", "b64_json"])
     ap.add_argument("--out-dir", default="")
+    ap.add_argument("--dry-run", action="store_true", default=False, help="Resolve refs and prompt without calling the image provider.")
+    ap.add_argument("--dry-run-send", action="store_true", default=False, help="Print planned OpenClaw send commands without sending messages.")
     return ap.parse_args()
 
 
@@ -71,14 +72,15 @@ def main() -> int:
     skill_dir = Path(__file__).resolve().parent
     gen_script = skill_dir / "gen.py"
 
-    if not args.skip_status_message and args.status_message:
+    status_cmd = build_send_cmd(
+        channel=args.channel,
+        target=args.target,
+        account=args.account,
+        message=args.status_message,
+    )
+    if not args.skip_status_message and args.status_message and not args.dry_run_send:
         status_proc = subprocess.run(
-            build_send_cmd(
-                channel=args.channel,
-                target=args.target,
-                account=args.account,
-                message=args.status_message,
-            ),
+            status_cmd,
             capture_output=True,
             text=True,
         )
@@ -101,12 +103,12 @@ def main() -> int:
         cmd.extend(["--quality", args.quality])
     if args.response_format:
         cmd.extend(["--response-format", args.response_format])
+    if args.dry_run or args.dry_run_send:
+        cmd.append("--dry-run")
     if args.prompt:
         cmd.extend(["--prompt", args.prompt])
     if args.out_dir:
         cmd.extend(["--out-dir", args.out_dir])
-    if args.watermark:
-        cmd.append("--watermark")
     if args.asset_id:
         cmd.extend(["--asset-id", args.asset_id])
     if args.asset_library:
@@ -133,6 +135,30 @@ def main() -> int:
         return gen_proc.returncode
 
     result = json.loads(gen_proc.stdout)
+    if args.dry_run or args.dry_run_send:
+        send_cmd = build_send_cmd(
+            channel=args.channel,
+            target=args.target,
+            account=args.account,
+            message=args.message,
+            media_path="<generated image path>",
+        )
+        print(
+            json.dumps(
+                {
+                    "dry_run_send": args.dry_run_send,
+                    "channel": args.channel,
+                    "target": args.target,
+                    "generated": result,
+                    "status_cmd": status_cmd,
+                    "send_cmd": send_cmd,
+                },
+                ensure_ascii=False,
+                indent=2,
+            )
+        )
+        return 0
+
     media_path = result["files"][0]
     send_cmd = build_send_cmd(
         channel=args.channel,
