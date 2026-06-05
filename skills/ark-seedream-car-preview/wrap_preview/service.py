@@ -37,6 +37,9 @@ def generate_wrap_preview(request: WrapPreviewRequest) -> dict[str, Any]:
             "base_url": config.base_url,
             "model": config.model,
             "auth_scheme": config.auth_scheme,
+            "request_style": config.request_style,
+            "watermark": config.watermark,
+            "response_format": config.response_format or request.response_format,
             "has_api_key": bool(config.api_key),
         }
         for config in configs

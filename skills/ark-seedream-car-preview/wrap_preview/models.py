@@ -40,6 +40,9 @@ class ProviderConfig:
     model: str = "gpt-image-2"
     auth_scheme: str = "bearer"
     timeout_seconds: int = 300
+    request_style: str = "refs_array"
+    watermark: bool = False
+    response_format: str = ""
 
 
 @dataclass(frozen=True)

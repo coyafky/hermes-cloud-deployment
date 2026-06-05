@@ -24,16 +24,22 @@ class OpenAICompatibleProvider:
         if not self.config.api_key:
             raise ProviderConfigurationError(f"Missing API key for provider {self.config.name!r}")
 
+        effective_response_format = self.config.response_format or response_format
         payload = {
             "model": self.config.model,
             "prompt": prompt,
             "n": 1,
             "size": size,
             "quality": quality,
-            "response_format": response_format,
+            "response_format": effective_response_format,
         }
         if refs:
-            payload["image"] = refs
+            if self.config.request_style == "single_image":
+                payload["image"] = refs[0]
+            else:
+                payload["image"] = refs
+        if self.config.watermark:
+            payload["watermark"] = True
         return self._post_json(f"{self.config.base_url.rstrip('/')}/images/generations", payload)
 
     def _post_json(self, url: str, payload: dict) -> dict:
@@ -56,4 +62,3 @@ class OpenAICompatibleProvider:
             raise ProviderError(f"{self.config.name} image generation failed ({err.code}): {detail}") from err
         except Exception as err:
             raise ProviderError(f"{self.config.name} image generation failed: {err}") from err
-

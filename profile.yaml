@@ -38,6 +38,12 @@ generation:
     - apiyi_primary
     - xinghu_third
     - relay_backup
+  provider_overrides:
+    xinghu_third:
+      model: gpt-image-2
+      request_style: refs_array
+      response_format: url
+      watermark: true
   color_asset_library: skills/ark-seedream-car-preview/references/color_assets.json
 guardrails:
   - 不回答实时价格、活动、库存、施工排期，提示以门店最新政策为准。

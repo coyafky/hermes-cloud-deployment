@@ -99,6 +99,14 @@ def default_size_for(provider: str = "auto") -> str:
     return DEFAULT_OPENAI_COMPATIBLE_SIZE
 
 
+def parse_bool(value: str) -> bool:
+    return value.strip().lower() in {"1", "true", "yes", "y", "on"}
+
+
+def default_request_style_for(provider: str) -> str:
+    return "refs_array"
+
+
 def load_provider_configs(
     *,
     provider: str,
@@ -130,6 +138,10 @@ def load_provider_configs(
                 api_key=api_key,
                 model=model,
                 auth_scheme=env_lookup(values, "IMAGE_RELAY_AUTH_SCHEME", "OPENAI_COMPATIBLE_AUTH_SCHEME") or "bearer",
+                request_style=env_lookup(values, "IMAGE_RELAY_REQUEST_STYLE", "OPENAI_COMPATIBLE_REQUEST_STYLE")
+                or default_request_style_for(provider),
+                watermark=parse_bool(env_lookup(values, "IMAGE_RELAY_WATERMARK", "OPENAI_COMPATIBLE_WATERMARK")),
+                response_format=env_lookup(values, "IMAGE_RELAY_RESPONSE_FORMAT", "OPENAI_COMPATIBLE_RESPONSE_FORMAT"),
             )
         ]
 
@@ -156,6 +168,10 @@ def load_provider_configs(
                 api_key=fallback_key,
                 model=model,
                 auth_scheme=env_lookup(values, "IMAGE_RELAY_AUTH_SCHEME", "OPENAI_COMPATIBLE_AUTH_SCHEME") or "bearer",
+                request_style=env_lookup(values, "IMAGE_RELAY_REQUEST_STYLE", "OPENAI_COMPATIBLE_REQUEST_STYLE")
+                or default_request_style_for("default"),
+                watermark=parse_bool(env_lookup(values, "IMAGE_RELAY_WATERMARK", "OPENAI_COMPATIBLE_WATERMARK")),
+                response_format=env_lookup(values, "IMAGE_RELAY_RESPONSE_FORMAT", "OPENAI_COMPATIBLE_RESPONSE_FORMAT"),
             )
         ]
     return []
@@ -172,6 +188,10 @@ def load_named_provider(values: dict[str, str], name: str, default_model: str) -
         api_key=env_lookup(values, prefix + "API_KEY", *legacy_provider_api_key_names(name)),
         model=env_lookup(values, prefix + "MODEL", *legacy_provider_model_names(name)) or default_model,
         auth_scheme=env_lookup(values, prefix + "AUTH_SCHEME") or "bearer",
+        request_style=env_lookup(values, prefix + "REQUEST_STYLE", *legacy_provider_request_style_names(name))
+        or default_request_style_for(name),
+        watermark=parse_bool(env_lookup(values, prefix + "WATERMARK", *legacy_provider_watermark_names(name))),
+        response_format=env_lookup(values, prefix + "RESPONSE_FORMAT", *legacy_provider_response_format_names(name)),
     )
 
 
@@ -205,4 +225,25 @@ def legacy_provider_model_names(name: str) -> tuple[str, ...]:
         return ("FOURS_MODEL", "4S_MODEL")
     if "xinghu" in normalized:
         return ("XINGHU_MODEL", "XINGHUAPI_MODEL")
+    return ()
+
+
+def legacy_provider_request_style_names(name: str) -> tuple[str, ...]:
+    normalized = name.lower().replace("-", "_")
+    if "xinghu" in normalized:
+        return ("XINGHU_REQUEST_STYLE", "XINGHUAPI_REQUEST_STYLE")
+    return ()
+
+
+def legacy_provider_watermark_names(name: str) -> tuple[str, ...]:
+    normalized = name.lower().replace("-", "_")
+    if "xinghu" in normalized:
+        return ("XINGHU_WATERMARK", "XINGHUAPI_WATERMARK")
+    return ()
+
+
+def legacy_provider_response_format_names(name: str) -> tuple[str, ...]:
+    normalized = name.lower().replace("-", "_")
+    if "xinghu" in normalized:
+        return ("XINGHU_RESPONSE_FORMAT", "XINGHUAPI_RESPONSE_FORMAT")
     return ()

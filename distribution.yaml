@@ -22,6 +22,18 @@ env_requires:
     description: "星狐 OpenAI-compatible image generation API key"
     required: false
     default: ""
+  - name: WRAP_PROVIDER_XINGHU_THIRD_REQUEST_STYLE
+    description: "星狐参考图请求形态；车膜预览必须提交车辆图 + 色卡图，因此使用 refs_array"
+    required: false
+    default: "refs_array"
+  - name: WRAP_PROVIDER_XINGHU_THIRD_WATERMARK
+    description: "星狐 watermark 参数；按当前 SDK 示例支持 true/false"
+    required: false
+    default: "true"
+  - name: WRAP_PROVIDER_XINGHU_THIRD_RESPONSE_FORMAT
+    description: "星狐图片返回格式；按当前 SDK 示例默认使用 url"
+    required: false
+    default: "url"
 
 distribution_owned:
   - distribution.yaml

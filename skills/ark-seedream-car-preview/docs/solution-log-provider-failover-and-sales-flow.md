@@ -361,7 +361,7 @@ Unknown platform: origin
 
 ### 5. 星狐重新接入为第三 provider
 
-星狐文档说明其 GPTImage-2 中转 API 使用 `gpt-image-2` 图像生成模型，支持文字生图和参考图生图；参数包含 `model`、`prompt`、`size`、`quality` 等字段。
+星狐可作为 OpenAI-compatible 图像中转站接入。根据星狐示例代码，代码侧 `model` 仍使用 `gpt-image-2`；“A龙虾专属 Image”是星狐账号/分组侧的专属通道标签，不应写进 `model` 字段。
 
 本次重新接入为第三 provider：
 
@@ -375,6 +375,9 @@ Unknown platform: origin
 WRAP_PROVIDER_XINGHU_THIRD_BASE_URL=https://xinghuapi.com/v1
 WRAP_PROVIDER_XINGHU_THIRD_MODEL=gpt-image-2
 WRAP_PROVIDER_XINGHU_THIRD_AUTH_SCHEME=bearer
+WRAP_PROVIDER_XINGHU_THIRD_REQUEST_STYLE=refs_array
+WRAP_PROVIDER_XINGHU_THIRD_WATERMARK=true
+WRAP_PROVIDER_XINGHU_THIRD_RESPONSE_FORMAT=url
 ```
 
 本地 dry-run 已确认：
@@ -383,16 +386,18 @@ WRAP_PROVIDER_XINGHU_THIRD_AUTH_SCHEME=bearer
 provider: xinghu_third
 base_url: https://xinghuapi.com/v1
 model: gpt-image-2
+request_style: refs_array
+response_format: url
 has_api_key: true
 ```
 
-真实请求测试时，当前 key 返回：
+首次真实请求返回：
 
 ```text
 503 model_not_found: No available channel for model gpt-image-2 under current group
 ```
 
-判断：这不是本地路由错误，也不是鉴权失败，而是星狐账号/分组当前没有可用 `gpt-image-2` 通道。保留 `xinghu_third` 在 provider chain 中；如果它恢复通道，会自动参与轮询。如果仍返回 503，router 会记录失败并继续尝试后续 provider。
+判断：这不是本地路由错误，也不是鉴权失败。后续按星狐 SDK 示例补齐了请求形态差异：`extra_body.image` 等价的顶层 `image` 数组、`watermark=true`、以及星狐 provider 单独使用 `response_format=url`。如果它返回失败，router 会记录失败并继续尝试后续 provider。
 
 ## 当前结论
 
