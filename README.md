@@ -82,6 +82,8 @@ customer vehicle image
   -> realistic vehicle wrap preview
 ```
 
+Generated previews must preserve the customer's original vehicle-photo aspect ratio. With `size=auto`, providers may return a different pixel size, but square or otherwise mismatched aspect ratios are rejected before the result is sent onward.
+
 The key skill is:
 
 ```text

@@ -6,6 +6,7 @@ from typing import Any
 
 from .assets import apply_color_asset
 from .config import default_model_for, default_size_for, load_provider_configs, normalize_provider_name
+from .dimensions import assert_output_aspect_ratios, read_image_dimensions
 from .models import WrapPreviewRequest
 from .output import relative_path_string, save_generated_images
 from .paths import default_out_dir
@@ -25,6 +26,7 @@ def generate_wrap_preview(request: WrapPreviewRequest) -> dict[str, Any]:
     color_asset = apply_color_asset(request)
     prompt = build_prompt(request)
     validate_reference_images(request)
+    target_dimensions = read_image_dimensions(request.vehicle_refs[0])
 
     configs = load_provider_configs(
         provider=request.provider,
@@ -55,6 +57,7 @@ def generate_wrap_preview(request: WrapPreviewRequest) -> dict[str, Any]:
             "size": request.size,
             "quality": request.quality,
             "response_format": request.response_format,
+            "target_output_dimensions": target_dimensions,
             "refs": request.raw_refs,
             "reference_strategy": "vehicle_image_plus_preview_swatch_image",
             "out_dir": out_dir.as_posix(),
@@ -70,6 +73,7 @@ def generate_wrap_preview(request: WrapPreviewRequest) -> dict[str, Any]:
         response_format=request.response_format,
     )
     files, urls, base64_count = save_generated_images(provider_result.response, out_dir)
+    output_dimensions = assert_output_aspect_ratios(files, target_dimensions)
     relative_files = [relative_path_string(path, cwd) for path in files]
     return {
         "provider": provider_result.provider,
@@ -78,6 +82,8 @@ def generate_wrap_preview(request: WrapPreviewRequest) -> dict[str, Any]:
         "model": provider_result.model,
         "size": request.size,
         "quality": request.quality,
+        "target_output_dimensions": target_dimensions,
+        "output_dimensions": output_dimensions,
         "files": [path.as_posix() for path in files],
         "relative_files": relative_files,
         "media_tokens": [f"MEDIA:{path}" for path in relative_files],

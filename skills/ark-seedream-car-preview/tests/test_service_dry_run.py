@@ -21,6 +21,7 @@ class ServiceDryRunTests(unittest.TestCase):
         self.assertEqual(result["refs"][0], "https://example.com/customer-car.jpg")
         self.assertTrue(result["refs"][1].endswith("A-001-measurement-4.png"))
         self.assertEqual(result["providers"][0]["base_url"], "https://4sapi.com/v1")
+        self.assertIsNone(result["target_output_dimensions"])
 
 
 if __name__ == "__main__":
