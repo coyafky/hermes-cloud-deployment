@@ -69,7 +69,7 @@ provider.generate(
 本次不再把字节模型作为备选，因为效果不满足业务要求。更合理的备选方式是多个高质量生图模型的 OpenAI-compatible 中转站：
 
 ```text
-4sapi_primary -> relay_backup -> future_provider
+4sapi_primary -> apiyi_primary -> xinghu_third -> relay_backup
 ```
 
 如果第一个 API 挂了，router 记录失败原因，然后尝试下一个 provider。
@@ -118,7 +118,7 @@ wrap_preview/
 新增 `.env.example` 作为模板：
 
 ```bash
-WRAP_PROVIDER_CHAIN=4sapi_primary,relay_backup
+WRAP_PROVIDER_CHAIN=4sapi_primary,apiyi_primary,xinghu_third,relay_backup
 
 WRAP_PROVIDER_4SAPI_PRIMARY_BASE_URL=https://4sapi.com/v1
 WRAP_PROVIDER_4SAPI_PRIMARY_API_KEY=replace-with-a-new-rotated-key
@@ -128,6 +128,10 @@ WRAP_PROVIDER_4SAPI_PRIMARY_AUTH_SCHEME=bearer
 WRAP_PROVIDER_RELAY_BACKUP_BASE_URL=https://backup.example.com/v1
 WRAP_PROVIDER_RELAY_BACKUP_API_KEY=replace-with-backup-key
 WRAP_PROVIDER_RELAY_BACKUP_MODEL=gpt-image-2
+
+WRAP_PROVIDER_XINGHU_THIRD_BASE_URL=https://xinghuapi.com/v1
+WRAP_PROVIDER_XINGHU_THIRD_API_KEY=replace-with-xinghu-key
+WRAP_PROVIDER_XINGHU_THIRD_MODEL=gpt-image-2
 WRAP_PROVIDER_RELAY_BACKUP_AUTH_SCHEME=bearer
 ```
 
@@ -355,6 +359,41 @@ Unknown platform: origin
 - 每次真实投递都必须检查发送工具返回值；不要只看到 `files` 或 `MEDIA:` 字段就判断已经发送成功。
 - 在 Hermes 当前会话内直接回复时，可使用 `MEDIA:/absolute/path`；在脚本或后台任务中，应走显式 OpenClaw media send。
 
+### 5. 星狐重新接入为第三 provider
+
+星狐文档说明其 GPTImage-2 中转 API 使用 `gpt-image-2` 图像生成模型，支持文字生图和参考图生图；参数包含 `model`、`prompt`、`size`、`quality` 等字段。
+
+本次重新接入为第三 provider：
+
+```text
+4sapi_primary -> apiyi_primary -> xinghu_third -> relay_backup
+```
+
+配置：
+
+```bash
+WRAP_PROVIDER_XINGHU_THIRD_BASE_URL=https://xinghuapi.com/v1
+WRAP_PROVIDER_XINGHU_THIRD_MODEL=gpt-image-2
+WRAP_PROVIDER_XINGHU_THIRD_AUTH_SCHEME=bearer
+```
+
+本地 dry-run 已确认：
+
+```text
+provider: xinghu_third
+base_url: https://xinghuapi.com/v1
+model: gpt-image-2
+has_api_key: true
+```
+
+真实请求测试时，当前 key 返回：
+
+```text
+503 model_not_found: No available channel for model gpt-image-2 under current group
+```
+
+判断：这不是本地路由错误，也不是鉴权失败，而是星狐账号/分组当前没有可用 `gpt-image-2` 通道。保留 `xinghu_third` 在 provider chain 中；如果它恢复通道，会自动参与轮询。如果仍返回 503，router 会记录失败并继续尝试后续 provider。
+
 ## 当前结论
 
 本次重构后，skill 已经从“大脚本 + 单 provider”变成了：
@@ -382,7 +421,7 @@ HEX / Lab 只是辅助，不允许纯数值生图。
 ## 后续建议
 
 1. 轮换已经暴露过的 4sapi key。
-2. 增加第二个真实 backup relay，验证 provider failover 的真实网络路径。
+2. 持续验证 4sapi、APIYi、星狐三个真实中转站的 failover 网络路径。
 3. 把销售流程测试固定成脚本，例如 `scripts/run_sales_flow_smoke.py`。
 4. 增加输出质检字段，例如是否返回多张图、是否保留车辆主体、是否发生背景大幅变化。
 5. 后续如接入飞书机器人，可直接调用 `wrap_preview.service.generate_wrap_preview()`，而不是重新拼命令行。

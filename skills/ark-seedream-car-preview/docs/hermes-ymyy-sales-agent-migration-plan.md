@@ -73,7 +73,9 @@ flowchart TD
     F --> G["颜色资产库 color_assets.json"]
     F --> H["Provider Router"]
     H --> I["4sapi primary"]
-    H --> J["backup relay"]
+    H --> J["APIYi primary"]
+    H --> K["Xinghu third"]
+    H --> L["relay backup"]
     H --> K["future provider"]
     F --> L["生成结果图"]
     L --> M["Hermes 飞书上传 / 回传"]
@@ -389,10 +391,16 @@ Hermes 应归一化后查询 `color_assets.json`。
 生产环境建议使用服务器 secret 或环境变量，不使用明文提交。
 
 ```bash
-WRAP_PROVIDER_CHAIN=4sapi_primary,relay_backup
+WRAP_PROVIDER_CHAIN=4sapi_primary,apiyi_primary,xinghu_third,relay_backup
 WRAP_PROVIDER_4SAPI_PRIMARY_BASE_URL=https://4sapi.com/v1
 WRAP_PROVIDER_4SAPI_PRIMARY_API_KEY=...
 WRAP_PROVIDER_4SAPI_PRIMARY_MODEL=gpt-image-2
+WRAP_PROVIDER_APIYI_PRIMARY_BASE_URL=https://api.apiyi.com/v1
+WRAP_PROVIDER_APIYI_PRIMARY_API_KEY=...
+WRAP_PROVIDER_APIYI_PRIMARY_MODEL=gpt-image-2-all
+WRAP_PROVIDER_XINGHU_THIRD_BASE_URL=https://xinghuapi.com/v1
+WRAP_PROVIDER_XINGHU_THIRD_API_KEY=...
+WRAP_PROVIDER_XINGHU_THIRD_MODEL=gpt-image-2
 WRAP_PROVIDER_4SAPI_PRIMARY_AUTH_SCHEME=bearer
 ```
 
@@ -522,9 +530,8 @@ provider 不可用时，销售能收到可理解的失败说明，而不是静�
 ## 后续优先事项
 
 1. 轮换已暴露过的 4sapi key。
-2. 增加真实 backup relay，并做 failover 实测。
+2. 持续对 4sapi、APIYi、星狐三个真实中转站做 failover 实测。
 3. 编写 Hermes 工具包装层。
 4. 接入飞书图片下载和结果上传。
 5. 固化销售流程 smoke test。
 6. 建立生成案例日志与反馈闭环。
-

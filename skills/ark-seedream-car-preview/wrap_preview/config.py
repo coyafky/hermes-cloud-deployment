@@ -119,6 +119,9 @@ def load_provider_configs(
             "APIYI_API_KEY",
             "4S_API_KEY",
             "FOURS_API_KEY",
+            "XINGHU_API_KEY",
+            "XINGHUAPI_API_KEY",
+            "XINGHU_CLOUD_API_KEY",
         )
         return [
             ProviderConfig(
@@ -178,6 +181,8 @@ def legacy_provider_base_url_names(name: str) -> tuple[str, ...]:
         return ("APIYI_BASE_URL",)
     if "4s" in normalized or "fours" in normalized:
         return ("FOURS_BASE_URL", "4S_BASE_URL")
+    if "xinghu" in normalized:
+        return ("XINGHU_BASE_URL", "XINGHUAPI_BASE_URL")
     return ()
 
 
@@ -187,6 +192,8 @@ def legacy_provider_api_key_names(name: str) -> tuple[str, ...]:
         return ("APIYI_API_KEY",)
     if "4s" in normalized or "fours" in normalized:
         return ("4S_API_KEY", "FOURS_API_KEY")
+    if "xinghu" in normalized:
+        return ("XINGHU_API_KEY", "XINGHUAPI_API_KEY", "XINGHU_CLOUD_API_KEY")
     return ()
 
 
@@ -196,4 +203,6 @@ def legacy_provider_model_names(name: str) -> tuple[str, ...]:
         return ("APIYI_MODEL",)
     if "4s" in normalized or "fours" in normalized:
         return ("FOURS_MODEL", "4S_MODEL")
+    if "xinghu" in normalized:
+        return ("XINGHU_MODEL", "XINGHUAPI_MODEL")
     return ()

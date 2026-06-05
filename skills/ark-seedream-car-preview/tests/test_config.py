@@ -36,6 +36,22 @@ class ConfigTests(unittest.TestCase):
         self.assertEqual(config.api_key, "legacy-key")
         self.assertEqual(config.model, "gpt-image-2")
 
+    def test_named_provider_accepts_legacy_xinghu_names(self):
+        config = load_named_provider(
+            {
+                "XINGHU_BASE_URL": "https://xinghuapi.com/v1",
+                "XINGHU_API_KEY": "legacy-key",
+                "XINGHU_MODEL": "gpt-image-2",
+            },
+            "xinghu_third",
+            "gpt-image-2-all",
+        )
+
+        self.assertIsNotNone(config)
+        self.assertEqual(config.base_url, "https://xinghuapi.com/v1")
+        self.assertEqual(config.api_key, "legacy-key")
+        self.assertEqual(config.model, "gpt-image-2")
+
 
 if __name__ == "__main__":
     unittest.main()

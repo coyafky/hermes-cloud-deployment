@@ -48,10 +48,14 @@ flowchart TB
     subgraph layer4["④ 生图 Provider 层"]
         router["ProviderRouter\n按顺序轮询"]
         p1["4sapi_primary\nOpenAI-compatible"]
-        p2["relay_backup\nOpenAI-compatible"]
+        p2["apiyi_primary\nOpenAI-compatible"]
+        p3["xinghu_third\nOpenAI-compatible"]
+        p4["relay_backup\nOpenAI-compatible"]
         p3["future_provider\nOpenAI-compatible"]
         router --> p1
-        router --> p2
+    router --> p2
+    router --> p3
+    router --> p4
         router --> p3
     end
 
@@ -247,7 +251,7 @@ flowchart TD
 Provider 配置例子：
 
 ```bash
-WRAP_PROVIDER_CHAIN=4sapi_primary,relay_backup
+WRAP_PROVIDER_CHAIN=4sapi_primary,apiyi_primary,xinghu_third,relay_backup
 
 WRAP_PROVIDER_4SAPI_PRIMARY_BASE_URL=https://4sapi.com/v1
 WRAP_PROVIDER_4SAPI_PRIMARY_API_KEY=...
@@ -257,6 +261,10 @@ WRAP_PROVIDER_4SAPI_PRIMARY_AUTH_SCHEME=bearer
 WRAP_PROVIDER_RELAY_BACKUP_BASE_URL=https://backup.example.com/v1
 WRAP_PROVIDER_RELAY_BACKUP_API_KEY=...
 WRAP_PROVIDER_RELAY_BACKUP_MODEL=gpt-image-2
+
+WRAP_PROVIDER_XINGHU_THIRD_BASE_URL=https://xinghuapi.com/v1
+WRAP_PROVIDER_XINGHU_THIRD_API_KEY=...
+WRAP_PROVIDER_XINGHU_THIRD_MODEL=gpt-image-2
 WRAP_PROVIDER_RELAY_BACKUP_AUTH_SCHEME=bearer
 ```
 
@@ -396,4 +404,3 @@ hermes-cloud-deployment/
 - 本地路径转 data URL 细节
 
 这些都应该留在 `wrap_preview` 里。`ymyy-sales-agent` 只负责识别销售意图、准备结构化参数、调用工具、组织回传话术。
-

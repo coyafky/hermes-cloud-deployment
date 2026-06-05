@@ -20,10 +20,16 @@ The skill now separates:
 Configure multiple OpenAI-compatible channels:
 
 ```bash
-WRAP_PROVIDER_CHAIN=4sapi_primary,relay_backup
+WRAP_PROVIDER_CHAIN=4sapi_primary,apiyi_primary,xinghu_third,relay_backup
 WRAP_PROVIDER_4SAPI_PRIMARY_BASE_URL=https://4sapi.com/v1
 WRAP_PROVIDER_4SAPI_PRIMARY_API_KEY=...
 WRAP_PROVIDER_4SAPI_PRIMARY_MODEL=gpt-image-2
+WRAP_PROVIDER_APIYI_PRIMARY_BASE_URL=https://api.apiyi.com/v1
+WRAP_PROVIDER_APIYI_PRIMARY_API_KEY=...
+WRAP_PROVIDER_APIYI_PRIMARY_MODEL=gpt-image-2-all
+WRAP_PROVIDER_XINGHU_THIRD_BASE_URL=https://xinghuapi.com/v1
+WRAP_PROVIDER_XINGHU_THIRD_API_KEY=...
+WRAP_PROVIDER_XINGHU_THIRD_MODEL=gpt-image-2
 WRAP_PROVIDER_RELAY_BACKUP_BASE_URL=https://backup.example.com/v1
 WRAP_PROVIDER_RELAY_BACKUP_API_KEY=...
 WRAP_PROVIDER_RELAY_BACKUP_MODEL=gpt-image-2

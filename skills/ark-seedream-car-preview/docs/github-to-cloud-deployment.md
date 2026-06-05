@@ -89,7 +89,7 @@ $PROFILE_DIR/.env.local
 云端至少需要一个真实 provider key。建议使用 `.env.local`：
 
 ```bash
-WRAP_PROVIDER_CHAIN=4sapi_primary,apiyi_primary,relay_backup
+WRAP_PROVIDER_CHAIN=4sapi_primary,apiyi_primary,xinghu_third,relay_backup
 
 WRAP_PROVIDER_4SAPI_PRIMARY_BASE_URL=https://4sapi.com/v1
 WRAP_PROVIDER_4SAPI_PRIMARY_API_KEY=...
@@ -100,6 +100,11 @@ WRAP_PROVIDER_APIYI_PRIMARY_BASE_URL=https://api.apiyi.com/v1
 WRAP_PROVIDER_APIYI_PRIMARY_API_KEY=...
 WRAP_PROVIDER_APIYI_PRIMARY_MODEL=gpt-image-2-all
 WRAP_PROVIDER_APIYI_PRIMARY_AUTH_SCHEME=bearer
+
+WRAP_PROVIDER_XINGHU_THIRD_BASE_URL=https://xinghuapi.com/v1
+WRAP_PROVIDER_XINGHU_THIRD_API_KEY=...
+WRAP_PROVIDER_XINGHU_THIRD_MODEL=gpt-image-2
+WRAP_PROVIDER_XINGHU_THIRD_AUTH_SCHEME=bearer
 ```
 
 旧字段仍可被兼容读取：
@@ -164,6 +169,6 @@ python3 scripts/gen_and_send.py \
 
 - unit tests pass
 - dry-run refs include both customer vehicle image and preview swatch image
-- providers show at least one `has_api_key: true`
+- providers show at least one `has_api_key: true`; for full production failover, 4sapi, APIYi, and Xinghu should all show `has_api_key: true`
 - `gen_and_send.py --dry-run-send` contains `openclaw message send --channel feishu --media <generated image path>`
 - no real secret appears in GitHub-tracked files

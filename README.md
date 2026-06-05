@@ -35,7 +35,7 @@ Do not commit API keys to this repository. Configure provider keys on each machi
 Recommended image provider configuration:
 
 ```bash
-WRAP_PROVIDER_CHAIN=4sapi_primary,apiyi_primary,relay_backup
+WRAP_PROVIDER_CHAIN=4sapi_primary,apiyi_primary,xinghu_third,relay_backup
 
 WRAP_PROVIDER_4SAPI_PRIMARY_BASE_URL=https://4sapi.com/v1
 WRAP_PROVIDER_4SAPI_PRIMARY_API_KEY=replace-with-local-key
@@ -46,6 +46,11 @@ WRAP_PROVIDER_APIYI_PRIMARY_BASE_URL=https://api.apiyi.com/v1
 WRAP_PROVIDER_APIYI_PRIMARY_API_KEY=replace-with-local-key
 WRAP_PROVIDER_APIYI_PRIMARY_MODEL=gpt-image-2-all
 WRAP_PROVIDER_APIYI_PRIMARY_AUTH_SCHEME=bearer
+
+WRAP_PROVIDER_XINGHU_THIRD_BASE_URL=https://xinghuapi.com/v1
+WRAP_PROVIDER_XINGHU_THIRD_API_KEY=replace-with-local-key
+WRAP_PROVIDER_XINGHU_THIRD_MODEL=gpt-image-2
+WRAP_PROVIDER_XINGHU_THIRD_AUTH_SCHEME=bearer
 ```
 
 Legacy local fields are still accepted by the car preview skill:
@@ -54,6 +59,8 @@ Legacy local fields are still accepted by the car preview skill:
 APIYI_API_KEY
 4S_API_KEY
 FOURS_API_KEY
+XINGHU_API_KEY
+XINGHUAPI_API_KEY
 apiyi_api_key in .local.json
 ```
 
